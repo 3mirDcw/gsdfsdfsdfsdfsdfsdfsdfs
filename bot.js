@@ -227,11 +227,11 @@ client.on("messageUpdate", async (old, nev) => {
       if (reklam.some(word => nev.content.includes(word))) {
       if (nev.member.hasPermission("BAN_MEMBERS")) return ;
        //if (ayarlar.gelistiriciler.includes(nev.author.id)) return ;
- const embed = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(`<a:redke:763316512937082890> ${nev.author} , **Mesajını Editleyerek Reklam Yapmaya Çalıştı!**`)
+ const embed = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(` ${nev.author} , **Mesajını Editleyerek Reklam Yapmaya Çalıştı!**`)
             .addField("Reklamı:",nev)
         
             nev.delete();
-            const embeds = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(`<a:redke:763316512937082890> ${nev.author} , **Mesajı Editleyerek Reklam Yapamana İzin Veremem!**`) 
+            const embeds = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(` ${nev.author} , **Mesajı Editleyerek Reklam Yapamana İzin Veremem!**`) 
           client.channels.cache.get(y).send(embed)
             nev.channel.send(embeds).then(msg => msg.delete({timeout:5000}));
           
@@ -256,9 +256,9 @@ client.on("message", async msg => {
                  if (!msg.member.hasPermission("MANAGE_GUILD")) {
                  //  if (!ayarlar.gelistiriciler.includes(msg.author.id)) return ;
      msg.delete({timeout:750});
-                    const embeds = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(`<a:redke:763316512937082890> <@${msg.author.id}> , **Bu Sunucuda Reklam Yapmak Yasak!**`)
+                    const embeds = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(` <@${msg.author.id}> , **Bu Sunucuda Reklam Yapmak Yasak!**`)
       msg.channel.send(embeds).then(msg => msg.delete({timeout: 5000}));
-                const embed = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(`<a:redke:763316512937082890> ${msg.author} , **Reklam Yapmaya Çalıştı!**`) .addField("Mesajı:",msg)
+                const embed = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(` ${msg.author} , **Reklam Yapmaya Çalıştı!**`) .addField("Mesajı:",msg)
                client.channels.cache.get(y).send(embed)
                   }              
                 } catch(err) {
@@ -314,7 +314,7 @@ client.on("messageUpdate", async (old, nev) => {
       if (küfür.some(word => nev.content.includes(word))) {
       if (nev.member.hasPermission("BAN_MEMBERS")) return ;
        //if (ayarlar.gelistiriciler.includes(nev.author.id)) return ;
- const embed = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(`<a:redke:763316512937082890> ${nev.author} , **Mesajını Editleyerek Küfür Etmeye Çalıştı!**`)
+ const embed = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(` ${nev.author} , **Mesajını Editleyerek Küfür Etmeye Çalıştı!**`)
             .addField("Küfür:",nev)
         
             nev.delete();
@@ -1705,9 +1705,9 @@ client.on("guildMemberAdd", member => {
 
    const saasembed = new Discord.MessageEmbed()
 ////.setTitle('Bir Gold Üye Belirdi! <a:wavygolduye:742353872013754428>')
-.setDescription('<a:elsallayanpikachu:763098591480643645> Aleyküm Selam. Hoş Geldin! <a:welcome:752289859531440159>')
+.setDescription('❤ Aleyküm Selam. Hoş Geldin! ❤')
 .setTimestamp()
-.setFooter('Lydia')
+.setFooter('ShowTeam')
 .setColor(0x36393E)
    
  client.on("message", async msg => {
@@ -1746,7 +1746,7 @@ client.emojiler = {
   çevrimdışı: "763325323323768853", // ÇEVRİM DIŞI EMOJİSİ
   boşta: "763325616954408970", // BOŞTA EMOJİSİ
   bot: "763325775511683103", // BOT EMOJİSİ
-  polis: "763325938208735232", // POLİS EMOJİ
+  polis: "802650874823442483", // POLİS EMOJİ
   Yvar: "690266213426790480", // YETKİLERİM KOMUDUNDAKİ TİK İŞARETİ
   Yyok: "690266274336342068", // YETKİLERİM KOMUDUNDAKİ X İŞARETİ
   yan: "735869816103108689", // > GİBİ EMOJİ İŞTE :ç
@@ -1779,7 +1779,7 @@ client.ayarlar = {
   sahip: "488384549479251969671300887544594432",
 
   yardimcilar: [""],
-  isim: "Lydia",
+  isim: "ShowTeam",
   botD:
     "https://discordapp.com/oauth2/authorize?client_id=726348750653489163&scope=bot&permissions=8",
   webS: "",
@@ -1816,7 +1816,7 @@ const sayı = await db.fetch(`mesaj.${message.guild.id}.${message.author.id}`);
 if(Date.now() < maxTime) {
   const westraaaaam = new Discord.MessageEmbed()
   .setColor("RED")
-  .setDescription(`<a:redke:763316512937082890> <@${message.author.id}> , **Bu Sunucuda Spam Yapmak Yasak!**`)
+  .setDescription(` <@${message.author.id}> , **Bu Sunucuda Spam Yapmak Yasak!**`)
   .setFooter(`Bu mesaj otomatik olarak silinecektir.`)
 
  message.channel.send(westraaaaam).then(msg => msg.delete({timeout: 1500}));
