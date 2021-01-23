@@ -2,7 +2,7 @@ const Discord = require("discord.js"),
   db = require("quick.db");
 
 module.exports.run = async (client, message, args) => {
-	 if(message.author.id !== message.guild.owner.user.id) return message.reply('<a:redke:768435516319989780> Bu komutu kullanabilmek için **Sunucu Sahibi** olmalısın!')
+	 if(message.author.id !== message.guild.owner.user.id) return message.reply('<a:redke:763316512937082890> Bu komutu kullanabilmek için **Sunucu Sahibi** olmalısın!')
   let kontrol = await db.fetch(`dil_${message.guild.id}`);
   let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "!";
   if (kontrol == "agayokaga") {

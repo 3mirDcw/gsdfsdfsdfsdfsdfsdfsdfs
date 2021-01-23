@@ -8,7 +8,7 @@ let result = Math.floor((Math.random() * replies.length));
   
 let gifembed = new Discord.MessageEmbed()
 
-.setTitle("<a:hayde:764206746930642955> Man Gif <a:hayde:764206746930642955>")
+.setTitle("<a:muck:748603457048412291> Man Gif <a:muck:748603457048412291>")
 
 .setColor("BLACK")
 

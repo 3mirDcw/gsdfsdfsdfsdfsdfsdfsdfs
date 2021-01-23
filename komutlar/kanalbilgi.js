@@ -15,7 +15,7 @@ module.exports.run = async (client, message, args) => {
                 doktor.addField('Oluşturulduğu Tarih:', moment(message.channel.createdAt).format('DD/MM/YYYY'), true)
                 .setColor(3447003)
                 .setThumbnail(message.guild.iconURL)
-                .setFooter('Heavan Kanal Bilgi', client.user.avatarURL)
+                .setFooter('Doktor Kanal Bilgi', client.user.avatarURL)
             message.channel.send(doktor)
 };
 

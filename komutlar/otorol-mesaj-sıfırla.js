@@ -2,12 +2,12 @@ const Discord = require('discord.js');
 const db = require('quick.db')
 exports.run = (client, message, args) => { 
 
-if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:by:768435516319989780> **Bu komutu kullanabilmek için** "\`Yönetici\`" **yetkisine sahip olmalısın.**`);
+if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:by:752306236606906399> **Bu komutu kullanabilmek için** "\`Yönetici\`" **yetkisine sahip olmalısın.**`);
  const rol = db.fetch(`otoRM_${message.guild.id}`) 
- if(!rol) return message.reply(`<a:by:768435516319989780>  **Ayarlanmamış bir özellik sıfırlanamaz! **`)
+ if(!rol) return message.reply(`<a:by:752306236606906399>  **Ayarlanmamış bir özellik sıfırlanamaz! **`)
  
  
-  message.channel.send(`<a:hg:768438687343968276> **Otorol mesajı başarılı bir şekilde sıfırlandı.**`)
+  message.channel.send(`<a:hg:752305081545916438> **Otorol mesajı başarılı bir şekilde sıfırlandı.**`)
 
  
  db.delete(`otoRM_${message.guild.id}`)  

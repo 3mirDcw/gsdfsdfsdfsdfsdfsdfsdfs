@@ -5,16 +5,16 @@ const fynx = require("../ayarlar.json");
 let prefix = await db.fetch(`prefix.${message.guild.id}`) || fynx.prefix     
 let rol = message.mentions.roles.first() 
 let kanal = message.mentions.channels.first()
-if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:by:768435516319989780>  **Bu komutu kullanabilmek için** "\`Yönetici\`" **yetkisine sahip olmalısın.**`);
+if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:by:752306236606906399>  **Bu komutu kullanabilmek için** "\`Yönetici\`" **yetkisine sahip olmalısın.**`);
  
- if(!rol) return message.channel.send(`<a:by:768435516319989780>  **Lütfen Bir Rol Belirt!**\nRolü Etiketleyemiyorsan **Rolün Etiketleme Seçeneğini Aktif Etmeyi Unutma** \n**__Örnek Kullanım__** : \`${prefix}otorol-ayarla @rol #kanal\`\n\n**__Önemli Not!!__**: **Oto Rol'u Ayarlayabilmek İçin Botun Rolü, Verilecek Rolün Üstünde Bir Rolde Olmalı Yoksa Rolü Veremez!** `)
+ if(!rol) return message.channel.send(`<a:by:752306236606906399>  **Lütfen Bir Rol Belirt!**\nRolü Etiketleyemiyorsan **Rolün Etiketleme Seçeneğini Aktif Etmeyi Unutma** \n**__Örnek Kullanım__** : \`${prefix}otorol-ayarla @rol #kanal\`\n\n**__Önemli Not!!__**: **Oto Rol'u Ayarlayabilmek İçin Botun Rolü, Verilecek Rolün Üstünde Bir Rolde Olmalı Yoksa Rolü Veremez!** `)
  
- if(!kanal) return message.channel.send(`<a:by:768435516319989780>   **Lütfen Bir Kanal Belirt!** \n**__Örnek Kullanım__** : \`${prefix}otorol-ayarla @Rol #Kanal\``)
+ if(!kanal) return message.channel.send(`<a:by:752306236606906399>   **Lütfen Bir Kanal Belirt!** \n**__Örnek Kullanım__** : \`${prefix}otorol-ayarla @Rol #Kanal\``)
  
-  message.channel.send(`╔▬▬▬▬▬▬▬▬Heavan Otorol▬▬▬▬▬▬▬▬▬
-║► <a:hg:768790537108062248> Otorol Aktif Edildi.
-║► <a:hg:768790537108062248>  **${rol}** Olarak Güncelledim! 
-║► <a:hg:768790537108062248>  Otorol Kanalını **${kanal}** Olarak Güncelledim! 
+  message.channel.send(`╔▬▬▬▬▬▬▬▬Lydia Otorol▬▬▬▬▬▬▬▬▬
+║► <a:hg:752305081545916438> Otorol Aktif Edildi.
+║► <a:hg:752305081545916438>  **${rol}** Olarak Güncelledim! 
+║► <a:hg:752305081545916438>  Otorol Kanalını **${kanal}** Olarak Güncelledim! 
 ╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬`)
 
  

@@ -1,79 +1,57 @@
 const Discord = require('discord.js');
-const moment = require('moment');
-moment.locale('tr');
+const moment = require("moment");
+const db = require('quick.db');
 
-exports.run = (client, message, args) => {// can ♡ b#1010
-
-let mention = message.author;
-if(message.mentions.members.first()) mention = message.mentions.members.first().user;
-let mentionMember = message.guild.members.cache.get(mention.id);
-
-let slm = {
-  web: 'İnternet Tarayıcısı',
-  desktop: 'Bilgisayar',
-  mobile: 'Mobil'
+exports.run = async (client, message, args) => {
+    var user = '';
+    let member = message.mentions.users.first();
+    let author = message.author; 
+      if(member) {
+        var user = member;
+      } else {
+        var user = author;
+      }    
+    member = message.guild.member(user);
+  
+    let roller = member.roles.cache.array().slice(1).sort((a, b) => a.comparePositionTo(b)).reverse().map(role => role.name);
+    let rol = member.roles.cache.filter(m => m.name !== '@everyone').map(m => `<@&${m.id}>`).join(', ')
+    if (roller.length < 1) roller = ['Bu kullanıcının hiç rolü yok!'];
+    
+    const millisCreated = new Date().getTime() - user.createdAt.getTime();
+    const daysCreated = moment.duration(millisCreated).format("Y [yıl], D [gün]")
+    const millisJoined = new Date().getTime() - member.joinedAt.getTime();
+    const userJoined = moment.duration(millisJoined).format("Y [yıl], D [gün]")
+    
+    let katılım = moment(user.createdAt).format('DD.MM.YYYY')
+    let sunucu = moment(member.joinedAt).format('DD.MM.YYYY')
+      
+    if(user.presence.status === "dnd"){
+      var durum = '🔴'
+    }
+    else if(user.presence.status === "online"){
+      var durum = '🟢'
+    }
+    else if(user.presence.status === "idle"){
+      var durum = "🟡"
+    }
+      else {
+      var durum = "⚫"
+    }
+    
+    let rozet = user.flags.toArray()
+    let renk = 0xffa300
+    
+    
+    const embed = new Discord.MessageEmbed()
+      .addField("Kullanıcı", `**Kullanıcı**: ${user.tag} (${user.id})\n**Takma ad**: ${member.displayName}\n**Profil**: ${member} ${durum}\n**Bot profil mi?**: ${user.bot ? '\n Evet' : 'Hayır'}\n**Rozet(ler)**: ${rozet}\n**Hesap oluşturma tarihi**: ${katılım} [**${daysCreated}** önce]\n**Sunucuya giriş tarihi**: ${sunucu} [**${userJoined}** önce]\n**Rol** [**${member.roles.cache.size}**]: ${rol}`)
+      .setColor(renk)
+    message.channel.send(embed)
 }
-let oyunlar = [];
-mention.presence.activities.forEach(slm => {
-if(slm.type === 'CUSTOM_STATUS') {
-oyunlar.push(`${slm.emoji ? slm.emoji : ''} ${slm.state}`);
-} else {
-oyunlar.push(`**${slm.name}** ${slm.type.replace('PLAYING', 'oynuyor').replace('STREAMING', 'yayınlıyor').replace('LISTENING', 'dinliyor').replace('WATCHING', 'izliyor')}`)
-}});
-
-let rozetler = false;
-if(mention.flags.toArray().length <= 0) {
-rozetler = false;
-} else {
-rozetler = true;
-};
-
-let mentionFlags = mention.flags.toArray().join(' | ')
-.replace('HOUSE_BRAVERY', 'Bravery')  
-.replace('HOUSE_BRILLIANCE', 'Brilliance')
-.replace('HOUSE_BALANCE', 'Balance')
-.replace('VERIFIED_DEVELOPER', '1. Dönemde Doğrulanmış Bot Geliştiricisi')
-.replace('DISCORD_EMPLOYEE', 'Discord Çalışanı')
-.replace('PARTNERED_SERVER_OWNER', 'Discord Partner')
-.replace('HYPESQUAD_EVENTS', 'HypeSquad Events')
-.replace('BUGHUNTER_LEVEL_1', 'Bug Avcısı 1. Lvl')
-.replace('EARLY_SUPPORTER', 'Erken Destekçi')
-.replace('TEAM_USER', 'Takım Üyesi')
-.replace('SYSTEM', 'Sistem')
-.replace('BUGHUNTER_LEVEL_2', 'Bug Avcısı 2. Lvl')
-.replace('VERIFIED_BOT', 'Onaylı Bot');
-let sa;
-if(mention.bot) {
-sa = 'Bilinmiyor.'
-} else {
-sa = slm[Object.keys(mention.presence.clientStatus)[0]];
-};
-const embed = new Discord.MessageEmbed()
-.setColor('RANDOM')
-.setAuthor(mention.tag, mention.avatarURL({dynamic: true}))
-.setThumbnail(mention.avatarURL({dynamic: true}))
-.addField('Durum', mention.presence.status.replace('online', 'Çevrimiçi').replace('idle', 'Boşta').replace('dnd', 'Rahatsız Etmeyin').replace('offline', 'Çevrimdışı'), true)
-.addField('İstemci Durumu', sa, true)
-.addField('Ad', mention.username+` (${mention})`, true)
-.addField('Takma Ad', mentionMember.displayName, true)
-.addField('Katılma Tarihi', moment(mentionMember.joinedAt).format('D MMMM YYYY'), true)
-.addField('Kayıt Tarihi', moment(mention.createdAt).format('D MMMM YYYY'), true)
-.addField('Aktivite', oyunlar.join('\n') ? oyunlar.join('\n') : 'Hiç yok.')
-.addField('Roller', mentionMember.roles.cache.filter(a => a.name !== '@everyone').map(a => a).join(' ') ? mentionMember.roles.cache.filter(a => a.name !== '@everyone').map(a => a).join(' ') : 'Hiç yok.')
-.addField('Rozetler', `${rozetler ? mentionFlags : 'Hiç yok.'}`)
-.addField('Kullanıcı Kimliği', mention.id)
-.setFooter(mention.username, mention.avatarURL({dynamic: true}))
-.setTimestamp();
-
-message.channel.send(embed);
-}; 
 exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: ['kullanıcı-bilgi'],
-  permLevel: 0
-};
- 
+aliases: ['kullanıcıbilgi']
+}
+
 exports.help = {
-  name: 'kb'
-};// codare ♥
+name: 'kullanıcı-bilgi'
+
+}

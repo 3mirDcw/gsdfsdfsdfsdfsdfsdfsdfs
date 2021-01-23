@@ -3,7 +3,7 @@ const db = require("quick.db");
 
 module.exports.run = async (client, message, args) => {
   let kontrol = await db.fetch(`dil_${message.guild.id}`);
-  let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "!!";
+  let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "!";
   if (kontrol == "yokagayok") {
   
       

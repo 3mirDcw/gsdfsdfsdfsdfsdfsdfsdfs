@@ -17,7 +17,7 @@ exports.run = async (client, message, args) => {
         .addField(`  **Ses Kanalları**`, `» **${voiceChannels.size}**`) //#DevTR - xFalcon
         .addField(` **Kullanıcılar**`, ` Çevrimiçi : **${message.guild.members.cache.filter(o => o.presence.status === 'online').size}** \n Rahatsız Etmeyin : **${message.guild.members.cache.filter(dnd => dnd.presence.status === 'dnd').size}** \n Boşta: **${message.guild.members.cache.filter(i => i.presence.status === 'idle').size}** \n Görünmez/Çevrimdışı : **${message.guild.members.cache.filter(off => off.presence.status === 'offline').size}** \n  Botlar : **${botlar}**`, true) //#DevTR - xFalcon
         .setTitle(`${message.author.tag} - Tarafından Kullanıldı`) //#DevTR - xFalcon
-        .setFooter(`Heavan`, client.user.avatarURL()) //#DevTR - xFalcon
+        .setFooter(`Lydia`, client.user.avatarURL()) //#DevTR - xFalcon
     message.channel.send(devtr); //#DevTR - xFalcon
 //#DevTR - xFalcon
 //#DevTR - xFalcon

@@ -2,12 +2,12 @@ const Discord = require('discord.js');
 const db = require('quick.db')
 exports.run = (client, message, args) => { 
 
-if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:by:768435516319989780> **Bu komutu kullanabilmek için** "\`Yönetici\`" **yetkisine sahip olmalısın.**`);
+if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:by:752306236606906399> **Bu komutu kullanabilmek için** "\`Yönetici\`" **yetkisine sahip olmalısın.**`);
  const rol = db.fetch(`otoRL_${message.guild.id}`)  
- if(!rol) return message.reply(`<a:by:768438687343968276>  **Bu özellik zaten kapalı! **`)
+ if(!rol) return message.reply(`<a:by:752306236606906399>  **Bu özellik zaten kapalı! **`)
  
  
-  message.channel.send(`<a:hg:768438687343968276>  **Oto rol Sistemi başarılı bir şekilde kapatıldı.**`)
+  message.channel.send(`<a:hg:752305081545916438>  **Kayıt Sistemi başarılı bir şekilde kapatıldı.**`)
 
  
   db.delete(`otoRL_${message.guild.id}`)  
@@ -18,11 +18,11 @@ exports.conf = {
     enabled: true,
     guildOnly: false,
     permLevel: 0,
-    aliases: ['otorol-sıfırla']
+    aliases: ['otorol-kapat']
   };
   
   exports.help = {
-    name: 'otorol-sıfırla ',
-    description: 'otorol-sıfırla ',
-    usage: 'otorol-sıfırla '
+    name: 'otorol-kapat',
+    description: 'Türkiyenin Saatini Gösterir',
+    usage: 'gç'
   };

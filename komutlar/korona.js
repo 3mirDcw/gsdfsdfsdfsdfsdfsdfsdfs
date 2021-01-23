@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const ayarlar = require("../ayarlar.json")
 const axios = require('axios');
 exports.run = async (client, message, args) => {
+
 if (!args.length) {
             axios.get('https://corona.lmao.ninja/v2/all')
                 .then((response) => {

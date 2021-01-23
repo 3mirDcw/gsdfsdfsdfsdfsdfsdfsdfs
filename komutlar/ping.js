@@ -4,13 +4,13 @@ const db = require('quick.db');
 
 exports.run = async (app, message, client) => {
 
-  if(message.author.id !== '750212022100164658')
+  if(message.author.id !== '488384549479251969') if(message.author.id !== '504704539585150986')
     
       return;
 
   const embed2 = new Discord.MessageEmbed()
 
-  .setDescription('**Botun pingi hesaplanıyor Lütfen bekleyin...**')
+  .setDescription('**Botun pingi hesaplanıyor...**')
 
    let start = Date.now(); 
 
@@ -28,7 +28,7 @@ exports.run = async (app, message, client) => {
 
         const embed = new Discord.MessageEmbed()
 
-        .setDescription(`**Heavan**\n <a:online:768790537108062248> Mesaj gecikme süresi; **${diff}ms** \n\n **Heavan**\n <a:online:768790536916041728> Bot gecikme süresi; **${API}ms**`)
+        .setDescription(`**Lydia**\nMesaj gecikme süresi; **${diff}ms** \n\n **Lydia**\nBot gecikme süresi; **${API}ms**`)
 
         mesaj.edit(embed);
 

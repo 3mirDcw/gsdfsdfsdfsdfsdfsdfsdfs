@@ -10,7 +10,7 @@ exports.run = async (client, msg, args) => {
 
 .setTitle(`Uyarı`)
 
-.setDescription(`<a:by:768435516319989780> Bu Komutu Kullanmak İçin; \`ADMINISTRATOR\` Yetkisine Sahip Olmalısın!`))
+.setDescription(`<a:by:748515598765391933> Bu Komutu Kullanmak İçin; \`ADMINISTRATOR\` Yetkisine Sahip Olmalısın!`))
 
   
 
@@ -20,21 +20,21 @@ exports.run = async (client, msg, args) => {
 
     db.set(`seviyesınır${msg.guild.id}`, 250)
 
-    return msg.channel.send(`<a:hg:768438687343968276> Seviye-Sınır Başarıyla Sıfırlandı! Varsayılan: \`500\``)
+    return msg.channel.send(`<a:hg:748304066794356767> Seviye-Sınır Başarıyla Sıfırlandı! Varsayılan: \`500\``)
 
  }
 
   let sayı = args[0]
 
-  if(!sayı) return msg.channel.send(`<a:by:768435516319989780> Seviye bir sayı olmalı!`)
+  if(!sayı) return msg.channel.send(`<a:by:748515598765391933> Seviye bir sayı olmalı!`)
 
-  if(sayı < 100) return msg.channel.send(`<a:by:768435516319989780> En Az 100'e Kadar Bir Sayı Girebilirsiniz!`)
+  if(sayı < 100) return msg.channel.send(`<a:by:748515598765391933> En Az 100'e Kadar Bir Sayı Girebilirsiniz!`)
 
-  if(sayı > 500) return msg.channel.send(`<a:by:768435516319989780> En Fazla 500'e Kadar Bir Sayı Girebilirsiniz!`)
+  if(sayı > 500) return msg.channel.send(`<a:by:748515598765391933> En Fazla 500'e Kadar Bir Sayı Girebilirsiniz!`)
 
   db.set(`seviyesınır${msg.guild.id}`, args[0])
 
-  return msg.channel.send("<a:hg:768438687343968276> Başarıyla Seviye Sınırını \`" + args[0] + "\` Olarak Ayarladınız!")
+  return msg.channel.send("<a:hg:748304066794356767> Başarıyla Seviye Sınırını \`" + args[0] + "\` Olarak Ayarladınız!")
 
 };
 

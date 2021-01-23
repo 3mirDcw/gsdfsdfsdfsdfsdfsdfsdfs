@@ -10,7 +10,7 @@ if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(n
 
 .setTitle(`Uyarı`)
 
-.setDescription(`<a:by:768435516319989780> Bu Komutu Kullanmak İçin; \`ADMINISTRATOR\` Yetkisine Sahip Olmalısın!`))
+.setDescription(`<a:by:748515598765391933> Bu Komutu Kullanmak İçin; \`ADMINISTRATOR\` Yetkisine Sahip Olmalısın!`))
 
   
 
@@ -26,7 +26,7 @@ db.delete(`seviyekanal${message.guild.id}`)
 
 .setThumbnail(client.user.avatarURL()) 
 
-.setDescription(`<a:hg:768438687343968276> Seviye-Sistemi Bütün Ayarlamaları Sıfırlandı!`)
+.setDescription(`<a:hg:748304066794356767> Seviye-Sistemi Bütün Ayarlamaları Sıfırlandı!`)
 
 .setFooter(`${client.user.username} Seviye Sistemi!`)   )
 

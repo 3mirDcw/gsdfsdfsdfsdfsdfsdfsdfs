@@ -4,7 +4,7 @@ const db = require('quick.db')
 exports.run = async(client, message, args) => {
 
     
-if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(` <a:by:761571609551044629> Bu komutu kullanabilmek için "\`yönetici\`" yetkisine sahip olmalısın`);
+if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(` <a:by:748515598765391933> Bu komutu kullanabilmek için "\`yönetici\`" yetkisine sahip olmalısın`);
 
 
 if(args[0] === "sıfırla") {
@@ -26,7 +26,7 @@ if (!kanal) {
 .setAuthor(client.user.username, client.user.avatarURL())  
 .setTitle(`${client.user.username} - Hoş Geldin Kanal Ayarla `)
 .setColor('BLACK')
-.setDescription(`<a:by:761571606257991710> Hoş Geldin  Kanalı Belirtiniz !  `)
+.setDescription(`<a:by:752306236606906399> Hoş Geldin  Kanalı Belirtiniz !  `)
 .setThumbnail(client.user.avatarURL())
 .setFooter(`Komut ${message.author.tag} Tarafından Kullanıldı ! `)
 message.channel.send(ayarlanmadı)
@@ -36,7 +36,7 @@ const ayarlandı = new discord.MessageEmbed()
 .setAuthor(client.user.username, client.user.avatarURL())  
 .setTitle(`${client.user.username} - Hoş Geldin Kanal Ayarlandı `)
 .setColor('BLACK')
-.setDescription(`<a:hg:761571609551044629> Hoş Geldin Kanalı ${kanal} Olarak Ayarlandı ! `)
+.setDescription(`<a:hg:752305081545916438> Hoş Geldin Kanalı ${kanal} Olarak Ayarlandı ! `)
 .setThumbnail(client.user.avatarURL())
 .setFooter(`Komut ${message.author.tag} Tarafından Kullanıldı ! `)
 message.channel.send(ayarlandı)

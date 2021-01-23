@@ -18,7 +18,7 @@ exports.run = async (client, message, args) => {
 
     db.delete(`seviyekanal${message.guild.id}`)
 
-    return message.channel.send(`<a:hg:768438687343968276> Seviye-Log sıfırlandı!`);
+    return message.channel.send(`<a:hg:748304066794356767> Seviye-Log sıfırlandı!`);
 
   }
 
@@ -36,7 +36,7 @@ exports.run = async (client, message, args) => {
 
       db.set(`seviyekanal${message.guild.id}`, akanal.id);
 
-      message.channel.send(`<a:hg:768438687343968276> Seviye Log Kanalı Ayarlandı! Ayarlanan Kanal: <#${akanal.id}> Sıfırlamak için !seviye-log sıfırla`)           
+      message.channel.send(`<a:hg:748304066794356767> Seviye Log Kanalı Ayarlandı! Ayarlanan Kanal: <#${akanal.id}> Sıfırlamak için !seviye-log sıfırla`)           
 
     }
 
