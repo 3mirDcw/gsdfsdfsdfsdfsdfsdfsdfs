@@ -7,15 +7,15 @@ var prefix = ayarlar.prefix;
 
 module.exports = client => {
 var oyun = [
+        "3mir ;)",
+        "${prefix}yardım",
         "!kayıt-sistemi",
-        "!yardım",
-        "Ayarları baştan yapınız.",
         "!ekonomi",
         "!moderasyon",
         "!seviye-yardım",
         "!koruma-yardım",
-        "Veriler sıfırlandı."
-    ];
+        "Tüm Veriler sıfırlandı."
+      ];
 
     setInterval(function() {
 

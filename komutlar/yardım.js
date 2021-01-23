@@ -12,16 +12,16 @@ exports.run = async(client, message, args) => {
         .setColor('#d02090')
        .setTitle(`<a:ykleniyor:752305324588793896> **Lydia Bot Yardım Menüsüne Hoşgeldiniz** <a:ykleniyor:752305324588793896>`)
         .setDescription(`
-  **» ${prefix}premium-sistemi** <a:sagok:749305875188940983> Premium Komutlarını Gösterir.		
-  **» ${prefix}ekonomi** <a:sagok:749305875188940983> Ekonomi Komutlarını Gösterir.
-  **» ${prefix}gif-menü ** <a:sagok:749305875188940983> Gif Komutlarını Gosterir.
-  **» ${prefix}moderasyon** <a:sagok:749305875188940983> Moderasyon Komutlarını Gösterir.
-  **» ${prefix}moderasyon2** <a:sagok:749305875188940983> 2. Moderasyon Komutlarını Gösterir.
-  **» ${prefix}kullanıcı** <a:sagok:749305875188940983> Kullanıcı Komutlarıni Gösterir.
-  **» ${prefix}eğlence ** <a:sagok:749305875188940983> Eğlence Komutlarını Gösterir.
-  **» ${prefix}seviye-yardım ** <a:sagok:749305875188940983> Seviye Komutlarını Gösterir.
-  **» ${prefix}kayıt-sistemi** <a:sagok:749305875188940983> Kayıt Komutlarını Gösterir.
-  **» ${prefix}koruma-yardım** <a:sagok:749305875188940983> Koruma Komutlarını Gösterir.
+  **» ${prefix}premium-sistemi**Premium Komutlarını Gösterir.		
+  **» ${prefix}ekonomi** Ekonomi Komutlarını Gösterir.
+  **» ${prefix}gif-menü **Gif Komutlarını Gosterir.
+  **» ${prefix}moderasyon**Moderasyon Komutlarını Gösterir.
+  **» ${prefix}moderasyon2**2. Moderasyon Komutlarını Gösterir.
+  **» ${prefix}kullanıcı**Kullanıcı Komutlarıni Gösterir.
+  **» ${prefix}eğlence **Eğlence Komutlarını Gösterir.
+  **» ${prefix}seviye-yardım **Seviye Komutlarını Gösterir.
+  **» ${prefix}kayıt-sistemi**Kayıt Komutlarını Gösterir.
+  **» ${prefix}koruma-yardım**Koruma Komutlarını Gösterir.
 ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 **»  ${prefix}davet __Botu Davet Edebilirsiniz!__**
 **»  ${prefix}sunucutanıt __Sunucunuzu Tanıtabilirsiniz.__**
