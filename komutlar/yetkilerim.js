@@ -17,48 +17,48 @@ let x;
     let x11;
     
     //yönetici
-    if (msg.member.hasPermission("ADMINISTRATOR")) x = "<a:hg:706589034226647041>"
-    if (!msg.member.hasPermission("ADMINISTRATOR")) x = "<a:by:706589001091383347>"
+    if (msg.member.hasPermission("ADMINISTRATOR")) x = "<:hg:771741932921683998>"
+    if (!msg.member.hasPermission("ADMINISTRATOR")) x = "<:by:771741888801144873>"
     
     //Denetim kaydı
-    if (msg.member.hasPermission("VIEW_AUDIT_LOG")) x2 = "<a:hg:706589034226647041>"
-    if (!msg.member.hasPermission("VIEW_AUDIT_LOG")) x2 = "<a:by:706589001091383347>"
+    if (msg.member.hasPermission("VIEW_AUDIT_LOG")) x2 = "<:hg:771741932921683998>"
+    if (!msg.member.hasPermission("VIEW_AUDIT_LOG")) x2 = "<:by:771741888801144873>"
     
     //Sunucuyu yönet
-    if (msg.member.hasPermission("MANAGE_GUILD")) x3 = "<a:hg:706589034226647041>"
-    if (!msg.member.hasPermission("MANAGE_GUILD")) x3 = "<a:by:706589001091383347>"
+    if (msg.member.hasPermission("MANAGE_GUILD")) x3 = "<:hg:771741932921683998>"
+    if (!msg.member.hasPermission("MANAGE_GUILD")) x3 = "<:by:771741888801144873>"
     
     //Rolleri yönet
-    if (msg.member.hasPermission("MANAGE_ROLES")) x4 = "<a:hg:706589034226647041>"
-    if (!msg.member.hasPermission("MANAGE_ROLES")) x4 = "<a:by:706589001091383347>"
+    if (msg.member.hasPermission("MANAGE_ROLES")) x4 = "<:hg:771741932921683998>"
+    if (!msg.member.hasPermission("MANAGE_ROLES")) x4 = "<:by:771741888801144873>"
     
     //Kanalları yönet
-    if (msg.member.hasPermission("MANAGE_CHANNELS")) x5 = "<a:hg:706589034226647041>"
-    if (!msg.member.hasPermission("MANAGE_CHANNELS")) x5 = "<a:by:706589001091383347>"
+    if (msg.member.hasPermission("MANAGE_CHANNELS")) x5 = "<:hg:771741932921683998>"
+    if (!msg.member.hasPermission("MANAGE_CHANNELS")) x5 = "<:by:771741888801144873>"
     
     //üyeleri at
-    if (msg.member.hasPermission("KICK_MEMBERS")) x6 = "<a:hg:706589034226647041>"
-    if (!msg.member.hasPermission("KICK_MEMBERS")) x6 = "<a:by:706589001091383347>"
+    if (msg.member.hasPermission("KICK_MEMBERS")) x6 = "<:hg:771741932921683998>"
+    if (!msg.member.hasPermission("KICK_MEMBERS")) x6 = "<:by:771741888801144873>"
     
     //üyeleri yasakla
-    if (msg.member.hasPermission("BAN_MEMBERS")) x7 = "<a:hg:706589034226647041>"
-    if (!msg.member.hasPermission("BAN_MEMBERS")) x7 = "<a:by:706589001091383347>"
+    if (msg.member.hasPermission("BAN_MEMBERS")) x7 = "<:hg:771741932921683998>"
+    if (!msg.member.hasPermission("BAN_MEMBERS")) x7 = "<:by:771741888801144873>"
     
     //mesajları yönet
-    if (msg.member.hasPermission("MANAGE_MESSAGES")) x8 = "<a:hg:706589034226647041>"
-    if (!msg.member.hasPermission("MANAGE_MESSAGES")) x8 = "<a:by:706589001091383347>"
+    if (msg.member.hasPermission("MANAGE_MESSAGES")) x8 = "<:hg:771741932921683998>"
+    if (!msg.member.hasPermission("MANAGE_MESSAGES")) x8 = "<:by:771741888801144873>"
     
     //kullanıcı adlarını yönet
-    if (msg.member.hasPermission("MANAGE_NICKNAMES")) x9 = "<a:hg:706589034226647041>"
-    if (!msg.member.hasPermission("MANAGE_NICKNAMES")) x9 = "<a:by:706589001091383347>"
+    if (msg.member.hasPermission("MANAGE_NICKNAMES")) x9 = "<:hg:771741932921683998>"
+    if (!msg.member.hasPermission("MANAGE_NICKNAMES")) x9 = "<:by:771741888801144873>"
     
     //emojileri yönet
-    if (msg.member.hasPermission("MANAGE_EMOJIS")) x10 = "<a:hg:706589034226647041>"
-    if (!msg.member.hasPermission("MANAGE_EMOJIS")) x10 = "<a:by:706589001091383347>"
+    if (msg.member.hasPermission("MANAGE_EMOJIS")) x10 = "<:hg:771741932921683998>"
+    if (!msg.member.hasPermission("MANAGE_EMOJIS")) x10 = "<:by:771741888801144873>"
     
     //webhookları yönet
-    if (msg.member.hasPermission("MANAGE_WEBHOOKS")) x11 = "<a:hg:706589034226647041>"
-    if (!msg.member.hasPermission("MANAGE_WEBHOOKS")) x11 = "<a:by:706589001091383347>"
+    if (msg.member.hasPermission("MANAGE_WEBHOOKS")) x11 = "<:hg:771741932921683998>"
+    if (!msg.member.hasPermission("MANAGE_WEBHOOKS")) x11 = "<:by:771741888801144873>"
      const embed = new Discord.MessageEmbed()
   .setColor('GREEN')
     .setDescription(` ${x} Yönetici \n${x2} Denetim Kaydını Görüntüle\n ${x3} Sunucuyu Yönet \n${x4} Rolleri Yönet \n${x5} Kanalları Yönet \n${x6} Üyeleri At \n${x7} Üyeleri Yasakla \n${x8} Mesajları Yönet \n${x9} Kullanıcı Adlarını Yönet \n${x10} Emojileri Yönet \n${x11} Webhook'ları Yönet`);

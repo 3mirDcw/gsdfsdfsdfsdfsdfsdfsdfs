@@ -6,19 +6,19 @@ exports.run = async (client, message, args) => {
   this.fighting = new Set();
   
 	let opponent = message.mentions.users.first()
-	if (!opponent) return message.reply("<a:by:752306236606906399> Oynamak istediğin kişiyi etiketlemelisin!")
+	if (!opponent) return message.reply("<:by:768783125223702598> Oynamak istediğin kişiyi etiketlemelisin!")
   
-  if (opponent.bot) return message.reply('<a:by:752306236606906399> Botlar ile oynayamazsın!');
-  if (opponent.id === message.author.id) return message.reply('<a:by:752306236606906399> Kendin ile düello Atamazsın');
-		if (this.fighting.has(message.channel.id)) return message.reply('<a:by:752306236606906399> Kanal başına sadece bir düello meydana gelebilir.');
+  if (opponent.bot) return message.reply('<:by:768783125223702598> Botlar ile oynayamazsın!');
+  if (opponent.id === message.author.id) return message.reply('<:by:768783125223702598> Kendin ile düello Atamazsın');
+		if (this.fighting.has(message.channel.id)) return message.reply('<:by:768783125223702598> Kanal başına sadece bir düello meydana gelebilir.');
 		this.fighting.add(message.channel.id);
 		try {
 			if (!opponent.bot) {
-                await message.channel.send(`${opponent}, düello isteği geldi. Düello'yu kabul ediyor musun? (\`evet\` veya \`hayir\` olarak cevap veriniz.)`);
+                await message.channel.send(`${opponent}, düello isteği geldi. Düello'yu kabul ediyor musun? (\`evet\` veya \`hayır\` olarak cevap veriniz.)`);
 				const verification = await verify(message.channel, opponent);
 				if (!verification) {
 					this.fighting.delete(message.channel.id);
-					return message.channel.send(`<a:by:752306236606906399> Düello kabul edilmedi...`);
+					return message.channel.send(`<:by:768783125223702598> Düello kabul edilmedi...`);
 				}
 			}
 			let userHP = 500;
@@ -53,7 +53,7 @@ exports.run = async (client, message, args) => {
 						time: 30000
 					});
 					if (!turn.size) {
-						await message.reply(`<a:by:752306236606906399> Üzgünüm ama, süre doldu!`);
+						await message.reply(`<a:by:752306236606906399> Üzgünüm ama, süre doldu! <a:mogo:768783125223702598>`);
 						reset();
 						continue;
 					}
@@ -68,17 +68,17 @@ exports.run = async (client, message, args) => {
 					dealDamage(damage);
 					reset();
 				} else if (choice === 'savun') {
-					await message.channel.send(`${user}, kendisini süper kalkan ile savundu!`);
+					await message.channel.send(`${user}, kendisini süper kalkan ile savundu! <a:mogo:768783125223702598>`);
 					guard = true;
 					reset(false);
 				} else if (choice === 'ultra güç') {
 					const miss = Math.floor(Math.random() * 4);
 					if (!miss) {
 						const damage = randomRange(100, guard ? 150 : 300);
-						await message.channel.send(`${user}, Çoook uzak galaksilerden gelen ultra sonik enerjiyi yeterki miktarda topladın ve **${damage}** hasar vurdun!!`);
+						await message.channel.send(`${user}, Çoook uzak galaksilerden gelen ultra sonik enerjiyi yeterki miktarda topladın ve **${damage}** hasar vurdun!! <a:mogo:768783125223702598>`);
 						dealDamage(damage);
 					} else {
-						await message.channel.send(`${user}, Çoook uzak galaksilerden gelen ultra sonik enerjiyi yeterli miktarda toplayamadığın için ulta güç kullanamadın!`);
+						await message.channel.send(`${user}, Çoook uzak galaksilerden gelen ultra sonik enerjiyi yeterli miktarda toplayamadığın için ulta güç kullanamadın! <a:mogo:768783125223702598>`);
 					}
 					reset();
 				} else if (choice === 'kaç') {
@@ -86,12 +86,12 @@ exports.run = async (client, message, args) => {
 					forfeit();
 					break;
 				} else {
-					await message.reply('<a:by:752306236606906399> Ne yapmak istediğini anlamadım.');
+					await message.reply('<:by:768783125223702598> Ne yapmak istediğini anlamadım. <a:mogo:768783125223702598>');
 				}
 			}
 			this.fighting.delete(message.channel.id);
             const winner = userHP > oppoHP ? message.author : opponent;
-			return message.channel.send(`Oyun bitti! Tebrikler, **${winner}** kazandı! \n**${message.author.username}**: ${userHP} :heartpulse: \n**${opponent.username}**: ${oppoHP} :heartpulse:`);
+			return message.channel.send(`Oyun bitti! Tebrikler, **${winner}** kazandı Mutlak hakim sensin. \n**${message.author.username}**: ${userHP} :heartpulse: \n**${opponent.username}**: ${oppoHP} :heartpulse:`);
 		} catch (err) {
 			this.fighting.delete(message.channel.id);
 			throw err;

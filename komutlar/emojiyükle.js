@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = function(client, message, args) {
  
-  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:srowyanl:733997295711944734> Bu komutu kullanabilmek için "**Yönetici**" yetkisine sahip olmalısın.`);
+  if (!message.member.hasPermission("CONNECT")) return message.channel.send(`<a:srowyanl:733997295711944734> Bu komutu kullanabilmek için "**Yönetici**" yetkisine sahip olmalısın.`);
   let guild = message.guild
   let [westralink, westraad] = args.join(" ").split(" - ");
   if (!westralink) return message.channel.send(`<a:srowyanl:733997295711944734> Bir link yazmalısın.`)

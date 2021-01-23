@@ -2,37 +2,41 @@ const Discord = require('discord.js');
 const db = require('quick.db');
 const ayarlar = require('../ayarlar.json');
 const talkedRecently = new Set();
-let botid = ('709489466913325168') 
+let botid = ('767415660590399549') 
  
 exports.run = async(client, message, args) => { 
-  let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "!";
+  let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "!!";
 
     const embed = new Discord.MessageEmbed()
         .setAuthor(`${client.user.username} `, client.user.displayAvatarURL({dynamic: true}))
         .setColor('#d02090')
-       .setTitle(`<a:ykleniyor:752305324588793896> **Lydia Bot Yardım Menüsüne Hoşgeldiniz** <a:ykleniyor:752305324588793896>`)
+       .setTitle(`<a:ykleniyor:768397918264623114> **Heavan - Komutlar** <a:ykleniyor:768397918264623114>`)
         .setDescription(`
-  **» ${prefix}premium-sistemi**Premium Komutlarını Gösterir.		
-  **» ${prefix}ekonomi** Ekonomi Komutlarını Gösterir.
-  **» ${prefix}gif-menü **Gif Komutlarını Gosterir.
-  **» ${prefix}moderasyon**Moderasyon Komutlarını Gösterir.
-  **» ${prefix}moderasyon2**2. Moderasyon Komutlarını Gösterir.
-  **» ${prefix}kullanıcı**Kullanıcı Komutlarıni Gösterir.
-  **» ${prefix}eğlence **Eğlence Komutlarını Gösterir.
-  **» ${prefix}seviye-yardım **Seviye Komutlarını Gösterir.
-  **» ${prefix}kayıt-sistemi**Kayıt Komutlarını Gösterir.
-  **» ${prefix}koruma-yardım**Koruma Komutlarını Gösterir.
-▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
-**»  ${prefix}davet __Botu Davet Edebilirsiniz!__**
-**»  ${prefix}sunucutanıt __Sunucunuzu Tanıtabilirsiniz.__**
-**»  ${prefix}istatistik __Yazarak Botun İstatistiklerini Göre Bilirsiniz.__**
-**»  ${prefix}prefix __Yazarak Botun Prefixini Değiştirebilirsiniz.__**
-**»  ${prefix}prefix-sıfırla __Yazarak Ayarladığınız Prefixi Sıfırlayabilirsiniz.__**
+  **<:mogo:768397908604485632> ${prefix}premium-sistemi **Premium Komutlarını Gösterir.	
+  **<:mogo:768397908604485632> ${prefix}ekonomi **Ekonomi Komutlarını Gösterir.
+  **<:mogo:768397908604485632> ${prefix}gif-menü **  Gif Komutlarını Gosterir.
+  **<:mogo:768397908604485632> ${prefix}moderasyon**  Moderasyon Komutlarını Gösterir.
+  **<:mogo:768397908604485632> ${prefix}moderasyon2**  2. Moderasyon Komutlarını Gösterir.
+  **<:mogo:768397908604485632> ${prefix}kullanıcı** Kullanıcı Komutlarıni Gösterir.
+  **<:mogo:768397908604485632> ${prefix}eğlence ** Eğlence Komutlarını Gösterir.
+  **<:mogo:768397908604485632> ${prefix}kayıt-sistemi**  Kayıt Komutlarını Gösterir.
+  **<:mogo:768397908604485632> ${prefix}seviye-yardım**  Seviye Komutlarını Gösterir.
+  **<:mogo:768397908604485632> ${prefix}koruma-yardım** Koruma Komutlarını Gösterir.
+  **<:mogo:768397908604485632> ${prefix}logo-yardım** Logo Komutlarını Gösterir.
+  **<:mogo:768397908604485632> ${prefix}botlist-yardım** Bot List Komutlarını Gösterir.
+  **<:mogo:768397908604485632> ${prefix}özelodasistemi-yardım** Özel Oda Sistemi Komutlarını Gösterir.
 
+\n <a:mogo:768397918264623114> **Heavan - Genel Komutlar**
+
+**<:mogo:768397908604485632>  ${prefix}özel-komut __Özel Komut Sistemini Gösterir.__**
+**<:mogo:768397908604485632>  ${prefix}davet __Botu Davet Edebilirsiniz!__**
+**<:mogo:768397908604485632>  ${prefix}istatistik __Yazarak Botun İstatistiklerini Göre Bilirsiniz.__**
+**<:mogo:768397908604485632>  ${prefix}prefix __Yazarak Botun Prefixini Değiştirebilirsiniz.__**
+**<:mogo:768397908604485632>  ${prefix}prefix-sıfırla __Yazarak Ayarladığınız Prefixi Sıfırlayabilirsiniz.__**
 `)
-        .setThumbnail(`https://cdn.discordapp.com/attachments/735925634336817283/762342094554791936/ezgif.com-optimize_8-1.gif`)
-        .addField(`» Lydia Bot Bağlantıları`, ` <a:alev:752289999642296370> [Bot Davet Linki](https://discord.com/oauth2/authorize?client_id=696458462187618315&scope=bot&permissions=8) **|** [Destek Sunucusu](https://discord.gg/FQVadvq) **|** [Oy Linki](http://bit.ly/lydiaoy) **|** <a:alev:752289999642296370>`)
-        .setFooter(`${message.author.username} Tarafından İstendi.`, message.author.displayAvatarURL({dynamic: true}))
+        .addField(`**<a:ykleniyor:768397918264623114> Heavan Bot Bağlantıları <a:ykleniyor:768397918264623114>**`, ` <a:alev:768400614094012417>[Bot Davet Linki](https://discord.com/oauth2/authorize?client_id=767415660590399549&scope=bot&permissions=2146958847) **|** [Destek Sunucusu](https://discord.gg/UUNfxyU) **|** <a:alev:768400614094012417>`)
+     .setFooter(`${message.author.username} Tarafından İstendi.`, message.author.displayAvatarURL({dynamic: true}))
+    .setImage("https://media.discordapp.net/attachments/772918293543125003/772927675496661012/northdanmagoya.gif")
     return  message.channel.send(embed);
   
   
@@ -41,12 +45,12 @@ exports.run = async(client, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['yardım'],
+  aliases: ['help','y'],
   permLevel: 0,
 };
 
 exports.help = {
   name: 'yardım',
   description: 'a!davet-sistemi Menüsü',
-  usage: 'yardım'
+  usage: 'help'
 };

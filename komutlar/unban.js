@@ -1,7 +1,7 @@
 const codare = require('discord.js')
 exports.run = async(message, args) => {
 
-if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:by:752306236606906399>  **Bu komutu kullanabilmek için** "\`Yönetici\`" **yetkisine sahip olmalısın.**`);
+if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:by:768790536916041728>  **Bu komutu kullanabilmek için** "\`Yönetici\`" **yetkisine sahip olmalısın.**`);
 
 
 let tanersins = args[0]

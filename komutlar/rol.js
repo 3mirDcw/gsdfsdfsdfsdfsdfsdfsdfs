@@ -8,50 +8,50 @@ exports.run = async (client, message, args) => {
     
       const westrabumbeyyy = new Discord.MessageEmbed()
       .setColor("RED")
-      .setDescription(`<a:redke:763316512937082890> Bu sunucuda premium mod aktif değil. Bu yüzden bu komutu kullanamazsınız.`)
+      .setDescription(`<a:redke:768435516319989780> Bu sunucuda premium mod aktif değil. Bu yüzden bu komutu kullanamazsınız.`)
       return message.channel.send(westrabumbeyyy)
 
     
   } else {
   
 	//
-if(!message.member.hasPermission("MANAGE_ROLES")) return message.channel.send('<a:redke:763316512937082890> Bu komuta erişim sağlamak için ``ADMINISTRATOR`` yetkisine sahip olmalısın.')
+if(!message.member.hasPermission("MANAGE_ROLES")) return message.channel.send('<a:redke:768435516319989780> Bu komuta erişim sağlamak için ``ADMINISTRATOR`` yetkisine sahip olmalısın.')
 
 let data = await db.fetch(`rol_${message.guild.id}`)
-if(args[0] !== "ayarla" &&  args[0] !== "ver" &&  args[0] !== "al" &&  args[0] !== "sıfırla") return message.channel.send("<a:redke:763316512937082890> **ayarla**, **ver** , **al** ya da **sıfırla** olarak seçenek belirtmelisin.")
+if(args[0] !== "ayarla" &&  args[0] !== "ver" &&  args[0] !== "al" &&  args[0] !== "sıfırla") return message.channel.send("<a:redke:768435516319989780> **ayarla**, **ver** , **al** ya da **sıfırla** olarak seçenek belirtmelisin.")
 
 if(args[0] === "ayarla") {
-if(data) return message.channel.send("<a:redke:763316512937082890> Verilecek/alınacak rol daha önce ayarlanmış.")
+if(data) return message.channel.send("<a:redke:768435516319989780> Verilecek/alınacak rol daha önce ayarlanmış.")
 let rol = message.mentions.roles.first()
-if(!rol) return message.channel.send("<a:redke:763316512937082890> Rol belirtmelisin.")
+if(!rol) return message.channel.send("<a:redke:768435516319989780> Rol belirtmelisin.")
 db.set(`rol_${message.guild.id}`, rol.id)
-message.channel.send('<a:onayke:763316512051691520> Alınacak/verilecek rol <@&'+rol+'> olarak ayarlandı.')
+message.channel.send('<a:onayke:768438687343968276> Alınacak/verilecek rol <@&'+rol+'> olarak ayarlandı.')
 return
 }
 
 if(args[0] === "ver") {
-if(!data) return message.channel.send('<a:redke:763316512937082890> Alınacak/verilecek rol ayarlanmamış.')
+if(!data) return message.channel.send('<a:redke:768435516319989780> Alınacak/verilecek rol ayarlanmamış.')
 let rol = await db.fetch(`rol_${message.guild.id}`);
 let user = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[1]))
-if (!user) return message.channel.send('<a:redke:763316512937082890> Kullanıcı etiketlemelisin.')
+if (!user) return message.channel.send('<a:redke:768435516319989780> Kullanıcı etiketlemelisin.')
 user.roles.add(rol); 
-message.channel.send('<a:onayke:763316512051691520> Ayarlanan <@&'+rol+'> adlı rol <@'+user+'> adlı kullanıcıya verildi.')
+message.channel.send('<a:onayke:768438687343968276> Ayarlanan <@&'+rol+'> adlı rol <@'+user+'> adlı kullanıcıya verildi.')
 return
 }
 
 if(args[0] == "al") {
-if(!data) return message.channel.send('<a:redke:763316512937082890> Alınacak/verilecek rol ayarlanmamış.')
+if(!data) return message.channel.send('<a:redke:768435516319989780> Alınacak/verilecek rol ayarlanmamış.')
 let rol = await db.fetch(`rol_${message.guild.id}`);
 let user = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[1]))
 if (!user) return message.channel.send('Kullanıcı etiketle')
 user.roles.remove(rol);
-message.channel.send('<a:onayke:763316512051691520> Ayarlanan <@&'+rol+'> adlı rol <@'+user+'> adlı kullanıcıdan alındı.')
+message.channel.send('<a:onayke:768438687343968276> Ayarlanan <@&'+rol+'> adlı rol <@'+user+'> adlı kullanıcıdan alındı.')
 return      
 }
  if(args[0] == "sıfırla") {
-if(!data) return message.channel.send('<a:redke:763316512937082890> Verilecek/alınacak rol ayarlanmamış.')
+if(!data) return message.channel.send('<a:redke:768435516319989780> Verilecek/alınacak rol ayarlanmamış.')
 db.delete(`rol_${message.guild.id}`)
-message.channel.send('<a:onayke:763316512051691520> Verilecek/alınacak rol sıfırlandı.')
+message.channel.send('<a:onayke:768438687343968276> Verilecek/alınacak rol sıfırlandı.')
 return
 }
 }

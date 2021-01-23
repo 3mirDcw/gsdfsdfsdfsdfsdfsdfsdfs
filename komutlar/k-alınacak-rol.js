@@ -3,14 +3,14 @@ const db = require('quick.db')
 
 exports.run = async(client, message, args) => {
 
-  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:by:752306236606906399> Bu komutu kullanabilmek için "\`yönetici\`" yetkisine sahip olmalısın`);
+  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:by:768435516319989780> Bu komutu kullanabilmek için "\`yönetici\`" yetkisine sahip olmalısın`);
 
 if(args[0] === "sıfırla") {
 const sıfırlandı = new discord.MessageEmbed()
 .setAuthor(client.user.username, client.user.avatarURL())  
 .setTitle(`${client.user.username} Alınacak Rolü Sıfırla `)
 .setColor('BLACK')
-.setDescription(`<a:hg:752305081545916438> Kayıt Olunca Otomatik Alınacak Rol Sıfırlandı ! `)
+.setDescription(`<a:hg:768790537108062248> Kayıt Olunca Otomatik Alınacak Rol Sıfırlandı ! `)
 .setThumbnail(client.user.avatarURL())
 .setFooter(`Komut ${message.author.tag} Tarafından Kullanıldı ! `)
 message.channel.send(sıfırlandı)
@@ -24,7 +24,7 @@ if (!rol) {
 .setAuthor(client.user.username, client.user.avatarURL())  
 .setTitle(`${client.user.username}  Alınacak Rolü Ayarla `)
 .setColor('BLACK')
-.setDescription(`<a:by:752306236606906399> Kayıt Olunca Alınacak Rolü Belirtiniz ! `)
+.setDescription(`<a:by:768790537108062248> Kayıt Olunca Alınacak Rolü Belirtiniz ! `)
 .setThumbnail(client.user.avatarURL())
 .setFooter(`Komut ${message.author.tag} Tarafından Kullanıldı ! `)
 message.channel.send(ayarlanmadı)
@@ -34,7 +34,7 @@ const ayarlandı = new discord.MessageEmbed()
 .setAuthor(client.user.username, client.user.avatarURL())  
 .setTitle(`${client.user.username}  Alınacak Rol Ayarlandı `)
 .setColor('BLACK')
-.setDescription(`<a:hg:752305081545916438> Kayıt Olunca Otomatik Alınacak Rol Başarıyla ${rol} Olarak Ayarlandı ! `)
+.setDescription(`<a:hg:768790537108062248> Kayıt Olunca Otomatik Alınacak Rol Başarıyla ${rol} Olarak Ayarlandı ! `)
 .setThumbnail(client.user.avatarURL)
 .setFooter(`Komut ${message.author.tag} Tarafından Kullanıldı ! `)
 message.channel.send(ayarlandı)

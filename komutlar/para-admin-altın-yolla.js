@@ -2,18 +2,18 @@ const Discord = require('discord.js');
 const db = require('quick.db');
 exports.run = async (client, message, args) => {
       
-  if(message.author.id !== '488384549479251969') if(message.author.id !== '504704539585150986')
+  if(message.author.id !== '750212022100164658') if(message.author.id !== '595604842702045194')
     
       return;
   
   
   let user = message.mentions.users.first();
 
-  if (!user) return message.reply('Kime altın yollayacağını etiketlemen lazım!');
-  if (user.bot === true) return message.reply('altın bir bota yollarsan sen zararlı çıkarsın!');
+  if (!user) return message.reply('<:money:768783648933543976> **Kime altın yollayacağını etiketlemen lazım!**');
+  if (user.bot === true) return message.reply('<:money:768783648933543976> **altın bir bota yollarsan sen zararlı çıkarsın!**');
   
   let mesaj = args.slice(1).join(' ');
-  if (!mesaj) return message.reply('Yollayacağın miktarı yazman gerek!');
+  if (!mesaj) return message.reply('<:money:768783648933543976> **Yollayacağın miktarı yazman gerek!**');
 
 
 if (isNaN(args[1])) return message.channel.send("Lütfen bir sayı gir.")
@@ -34,7 +34,7 @@ if (isNaN(args[1])) return message.channel.send("Lütfen bir sayı gir.")
 
   const embed = new Discord.MessageEmbed()
   .setColor('RANDOM')
-  .setDescription(`${client.emojis.cache.get(client.emojiler.paraGitti)} ${user} Adlı kullanıcıya altın yollandı, yollanılan miktar: ${mesaj}`)
+  .setDescription(`<:money:768783648933543976> **${user} Adlı kullanıcıya altın yollandı, yollanılan miktar: ${mesaj}**`)
   message.channel.send(embed)
   db.add(`altıncıklar_${user.id}`, mesaj)
 

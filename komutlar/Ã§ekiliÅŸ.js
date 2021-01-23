@@ -3,15 +3,15 @@ const ms = require('ms');
 
 exports.run = async (client, message, args) => {
   
-    if (!message.member.hasPermission("ADMINISTRATOR")) return message.reply(`<a:redke:763316512937082890> Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.`);
+    if (!message.member.hasPermission("ADMINISTRATOR")) return message.reply(`<a:redke:768790536916041728> Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.`);
 
-if(!args[0]) return message.channel.send(`<a:redke:763316512937082890> Bir zaman belirtmelisin!`)
-        if(!args[0].endsWith("d")&&!args[0].endsWith("h")&&!args[0].endsWith("m")) return message.channel.send(`<a:redke:763316512937082890> Yanlış zaman girdiniz!`)
-        if(isNaN(args[0][0])) return message.channel.send(`<a:redke:763316512937082890> Bu bir rakam değil!`)
+if(!args[0]) return message.channel.send(`<a:redke:768824602171932672> Bir zaman belirtmelisin!`)
+        if(!args[0].endsWith("d")&&!args[0].endsWith("h")&&!args[0].endsWith("m")) return message.channel.send(`<a:redke:768824602171932672> Yanlış zaman girdiniz!`)
+        if(isNaN(args[0][0])) return message.channel.send(`<a:redke:768824602171932672> Bu bir rakam değil!`)
         let channel = message.mentions.channels.first()
-        if(!channel) return message.channel.send(`<a:redke:763316512937082890> Bir kanal etiketlemelisin!`)
+        if(!channel) return message.channel.send(`<a:redke:768824602171932672> Bir kanal etiketlemelisin!`)
         let prize = args.slice(2).join(" ")
-        if(!prize) return message.channel.send(`<a:redke:763316512937082890> Bir ödül belirtmelisin!`)
+        if(!prize) return message.channel.send(`<a:redke:768824602171932672> Bir ödül belirtmelisin!`)
         message.channel.send(`<a:onayke:763316512051691520> Çekiliş ${channel} kanalında başarıyla başladı!`)
         let Embed = new MessageEmbed()
         .setTitle(`:tada: Çekiliş! :tada:`)

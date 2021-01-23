@@ -12,14 +12,14 @@ if (fc !== null && 600000 - (Date.now() - fc) > 0) {
 let time = frenzyms(600000 - (Date.now() - fc));
 
 
-message.reply(`<a:erured:762952215966121985> Başka bir soygun yapmadan önce ${time.minutes} dakika, ${time.seconds} saniye beklemen gerek!`) 
+message.reply(`<a:erured:768436100007460914> Başka bir soygun yapmadan önce ${time.minutes} dakika, ${time.seconds} saniye beklemen gerek!`) 
 return
 }
   
 let frenzyuser = message.mentions.users.first()
-if(!frenzyuser) return message.reply('<a:erured:762952215966121985> Soymak istediğin kişiyi etiketlemelisin!')
-if(frenzyuser.id === message.author.id) return message.reply('<a:erured:762952215966121985> Kendini soyamazsın.')
-if(frenzyuser.bot) return message.reply('<a:erured:762952215966121985> Botları soyamazsın!')
+if(!frenzyuser) return message.reply('<a:erured:768436100007460914> Soymak istediğin kişiyi etiketlemelisin!')
+if(frenzyuser.id === message.author.id) return message.reply('<a:erured:768436100007460914> Kendini soyamazsın.')
+if(frenzyuser.bot) return message.reply('<a:erured:768436100007460914> Botları soyamazsın!')
   
 let para = await frenzydb.fetch(`balance${frenzyuser.id}`)
   
@@ -29,7 +29,7 @@ frenzydb.add(`paracık_${message.author.id}`, -150)
 frenzydb.add(`paracık_${frenzyuser.id}`, 150) 
 frenzydb.set(`DateNowFCsoygun_${message.author.id}`, Date.now()) 
   
-message.reply(`<a:erured:762952215966121985> Dostum b*ku yedin. Soyacağın kişinin hiç parası yok ve sen onu soymak istedin bu yüzden de hemen o kişiyi uyandırdın. Seni polise vermemesi için ona 150 TL ödemen gerekti.
+message.reply(`<a:erured:768436100007460914> Dostum b*ku yedin. Soyacağın kişinin hiç parası yok ve sen onu soymak istedin bu yüzden de hemen o kişiyi uyandırdın. Seni polise vermemesi için ona 150 TL ödemen gerekti.
 Senin paran 150 TL indirildi. Bir dahakine çok dikattli ol! Sende kalan: ${balance}`)
 return
 }
@@ -41,7 +41,7 @@ let mefta = balance / 10
 frenzydb.add(`paracık_${message.author.id}`, -mefta)
 frenzydb.set(`DateNowFCsoygun_${message.author.id}`, Date.now()) 
 
-message.reply(`<a:erured:762952215966121985> Dostum polislere yakalandın. Polisler rüşvet istiyior yoksa seni hapse sokacaklar. O yüzden paranın ${mefta} kadarı mefta oldu.`) 
+message.reply(`<a:erured:764148598686220298> Dostum polislere yakalandın. Polisler rüşvet istiyior yoksa seni hapse sokacaklar. O yüzden paranın ${mefta} kadarı mefta oldu.`) 
 return
 }
  
@@ -51,7 +51,7 @@ frenzydb.add(`paracık_${message.author.id}`, kazanlıacak)
 frenzydb.add(`paracık_${frenzyuser.id}`,-kazanlıacak) 
 frenzydb.set(`DateNowFCsoygun_${message.author.id}`, Date.now()) 
 
-message.reply(`<a:eruonay:762952219515289610> Dostum soygun başarılı tebrikler. Hesabına ${kazanlıacak} para gönderildi.`) 
+message.reply(`<a:eruonay:764148598686220298> Dostum soygun başarılı tebrikler. Hesabına ${kazanlıacak} para gönderildi.`) 
 return
 }
 };

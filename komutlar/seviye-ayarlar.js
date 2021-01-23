@@ -12,21 +12,21 @@ let sınır = await db.fetch(`seviyesınır${message.guild.id}`)
 
 let kanal1 = [];
 
-  if(kanal) kanal1 = `<a:hg:752305081545916438> **Açık!**`
+  if(kanal) kanal1 = `<a:hg:768790537108062248> **Açık!**`
 
-  if(!kanal) kanal1 = `<a:by:752306236606906399> **Kapalı!**`
+  if(!kanal) kanal1 = `<a:by:768790536916041728> **Kapalı!**`
 
   let xp1 = [];
 
-  if(xp) xp1 = `<a:hg:752305081545916438> \`${xp}\``
+  if(xp) xp1 = `<a:hg:768790537108062248> \`${xp}\``
 
-  if(!xp) xp1 = `<a:by:752306236606906399> **Ayarlanmamış! Default: \`250\`**`
+  if(!xp) xp1 = `<a:by:768790537108062248> **Ayarlanmamış! Default: \`250\`**`
 
 let sınır1 = [];
 
-  if(sınır) sınır1 = `<a:hg:752305081545916438> \`${sınır}\``
+  if(sınır) sınır1 = `<a:hg:768790537108062248> \`${sınır}\``
 
-  if(!sınır) sınır1 = `<a:by:752306236606906399> **Ayarlanmamış! Default: \`5\`**`
+  if(!sınır) sınır1 = `<a:by:768790536916041728> **Ayarlanmamış! Default: \`5\`**`
 
 message.channel.send(new Discord.MessageEmbed()
 

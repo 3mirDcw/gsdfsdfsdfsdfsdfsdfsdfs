@@ -5,18 +5,18 @@ const ayarlar = require('../ayarlar.json')
 
 exports.run = async (client, message, args) => { 
   
-if(message.author.id !== '488384549479251969') if(message.author.id !== '504704539585150986')
+if(message.author.id !== '750212022100164658')
     
       return;
   
 
  const args0 = args[0];
   if(!args0) {
-    message.channel.send("<a:redke:763316512937082890> Sunucu **ID** yazmalısın!")
+    message.channel.send("<a:redke:768435516319989780> Sunucu **ID** yazmalısın!")
   } else {
   
 db.set(`premod_${args0}`, "aktif")
-  message.channel.send("<a:onayke:763316512051691520> Başarıyla premium verildi.")
+  message.channel.send("**Başarıyla premium verildi.** <a:onayke:768438687343968276>")
 }
   }
     
