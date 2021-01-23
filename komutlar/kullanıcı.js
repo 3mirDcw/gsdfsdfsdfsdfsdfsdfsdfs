@@ -9,22 +9,22 @@ exports.run = async(client, message, args) => {
     const embed = new Discord.MessageEmbed()
         .setAuthor(`${client.user.username} `, client.user.displayAvatarURL({dynamic: true}))
         .setColor('#d02090')
-       .setTitle(`<a:yklenme:748514614870016072> **Lydia Bot  Kullanıcı Menüsüne Hoşgeldiniz** <a:yklenme:748514614870016072>`)
+       .setTitle(` **ShowTeam Bot  Kullanıcı Menüsüne Hoşgeldiniz** `)
         .setDescription(`
-  **» ${prefix}avatar** <a:sagok:749305875188940983> Avatarınızı Atar.
-  **» ${prefix}sunucutanıt** <a:sagok:749305875188940983> Sunucunuzu Tanıtır.
-  **» ${prefix}kullanıcı-bilgi** <a:sagok:749305875188940983> Etiketlediğiniz Kişinin Kullanıcı Bilgisini Gösterir.
-  **» ${prefix}kanalbilgi ** <a:sagok:749305875188940983> Belirtilen Kanal Hakkında Bilgi Verir.
-  **» ${prefix}davet** <a:sagok:749305875188940983> Botu Davet Edersiniz!
-  **» ${prefix}korona ** <a:sagok:749305875188940983> Korona Hakkında Bilgi Alırsınız.
-  **» ${prefix}id ** <a:sagok:749305875188940983> Etiketlediğiniz Kişini İD sini atar.
-  **» ${prefix}mcskin ** <a:sagok:749305875188940983> İsmini Girdiğiniz Skini Fotosunu Atar.
-  **» ${prefix}emoji-bilgi** <a:sagok:749305875188940983> İsmini Yazdığınız Emoji Hakkında Bilgi Alırsınız.
-  **» ${prefix}saat ** <a:sagok:749305875188940983> Saati Gösterir.(Kendinde Bakabilirsin Ama)
-  **» ${prefix}say** <a:sagok:749305875188940983> Sunucuda ki Üye Durumlarını Gösterir.
-  **» ${prefix}sunucu-bilgi** <a:sagok:749305875188940983> Sunucu Hakkın da Bilgi Verir.
-  **» ${prefix}sunucu-resim** <a:sagok:749305875188940983> Sunucunun İconunu Atar.
-  **» ${prefix}yetkilerim** <a:sagok:749305875188940983> Sunucuda ki Yetkilerinizi Gösterir.
+  **» ${prefix}avatar**  Avatarınızı Atar.
+  **» ${prefix}sunucutanıt**  Sunucunuzu Tanıtır.
+  **» ${prefix}kullanıcı-bilgi**  Etiketlediğiniz Kişinin Kullanıcı Bilgisini Gösterir.
+  **» ${prefix}kanalbilgi **  Belirtilen Kanal Hakkında Bilgi Verir.
+  **» ${prefix}davet**  Botu Davet Edersiniz!
+  **» ${prefix}korona **  Korona Hakkında Bilgi Alırsınız.
+  **» ${prefix}id **  Etiketlediğiniz Kişini İD sini atar.
+  **» ${prefix}mcskin **  İsmini Girdiğiniz Skini Fotosunu Atar.
+  **» ${prefix}emoji-bilgi**  İsmini Yazdığınız Emoji Hakkında Bilgi Alırsınız.
+  **» ${prefix}saat **  Saati Gösterir.(Kendinde Bakabilirsin Ama)
+  **» ${prefix}say**  Sunucuda ki Üye Durumlarını Gösterir.
+  **» ${prefix}sunucu-bilgi** Sunucu Hakkın da Bilgi Verir.
+  **» ${prefix}sunucu-resim**  Sunucunun İconunu Atar.
+  **» ${prefix}yetkilerim**  Sunucuda ki Yetkilerinizi Gösterir.
 ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 
 **»  ${prefix}davet __Botu Davet Edebilirsiniz!__**

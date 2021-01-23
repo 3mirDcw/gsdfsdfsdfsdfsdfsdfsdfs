@@ -4,9 +4,9 @@ const db = require('quick.db')
 exports.run = async (client, message, args) => {
     let nemesis = await db.fetch(`premod_${message.guild.id}`)
   let nemesisYazi;
-  if (nemesis == null) nemesisYazi = ' <a:redke:763316512937082890> Bu sunucuda premium mod aktif değil.'
-  if (nemesis == 'aktif') nemesisYazi = '<a:onayke:763316512051691520> Bu sunucu için premium mod aktif.'
-  if (nemesis == 'deaktif') nemesisYazi = '<a:redke:763316512937082890> Bu sunucuda premium mod aktif değil.'
+  if (nemesis == null) nemesisYazi = ' Bu sunucuda premium mod aktif değil.'
+  if (nemesis == 'aktif') nemesisYazi = ' Bu sunucu için premium mod aktif.'
+  if (nemesis == 'deaktif') nemesisYazi = ' Bu sunucuda premium mod aktif değil.'
   const embed = new Discord.MessageEmbed()
   .setTitle('Lydia - Premium Kontrol')
   .setColor("BLUE")
