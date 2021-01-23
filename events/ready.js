@@ -9,7 +9,7 @@ module.exports = client => {
 var oyun = [
         "!kayıt-sistemi",
         "!yardım",
-        "Ayarları baştan yapınız.",
+        "3 Sunucu 20.000 Kullanıcı ",
         "!ekonomi",
         "!moderasyon",
         "!seviye-yardım",
