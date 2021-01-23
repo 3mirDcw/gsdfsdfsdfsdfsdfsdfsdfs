@@ -17,7 +17,7 @@ exports.run = async (client, message, args) => {
 
 
     if (para < 15) {
-      message.channel.send(`<a:erured:762952215966121985> Bu oyunu oynayabilmek için en az \`15 TL\` olması gerekir.`)
+      message.channel.send(` Bu oyunu oynayabilmek için en az \`15 TL\` olması gerekir.`)
   } else if (para > 15) {
 
     
@@ -37,7 +37,7 @@ exports.run = async (client, message, args) => {
      
 		var kazandin = new Discord.MessageEmbed()
 		.setColor("GREEN")
-		.setDescription(`<a:eruonay:762952219515289610> Kazandın ve hesabına **${miktar}TL** eklendi.`)
+		.setDescription(` Kazandın ve hesabına **${miktar}TL** eklendi.`)
     return message.channel.send(kazandin)
    
 
@@ -48,7 +48,7 @@ exports.run = async (client, message, args) => {
 
 		var kaybettin = new Discord.MessageEmbed()
 		.setColor("RED")
-		.setDescription(`<a:erured:762952215966121985> Kaybettin ve hesabından **${miktar}TL** eksildi.`)
+		.setDescription(` Kaybettin ve hesabından **${miktar}TL** eksildi.`)
     db.add(`paracık_${message.member.id}`, -miktar)
     return message.channel.send(kaybettin);	
     
@@ -71,7 +71,7 @@ exports.run = async (client, message, args) => {
        
       var kazandin = new Discord.MessageEmbed()
       .setColor("GREEN")
-      .setDescription(`<a:eruonay:762952219515289610> Kazandın ve hesabına **${miktar}TL** eklendi.`)
+      .setDescription(` Kazandın ve hesabına **${miktar}TL** eklendi.`)
       return message.channel.send(kazandin)
      
   
@@ -82,7 +82,7 @@ exports.run = async (client, message, args) => {
   
       var kaybettin = new Discord.MessageEmbed()
       .setColor("RED")
-      .setDescription(`<a:erured:762952215966121985> Kaybettin ve hesabından **${miktar}TL** eksildi.`)
+      .setDescription(`Kaybettin ve hesabından **${miktar}TL** eksildi.`)
       db.add(`paracık_${message.member.id}`, -miktar)
       return message.channel.send(kaybettin);	
       

@@ -3,14 +3,13 @@ const db = require('quick.db')
 
 exports.run = async(client, message, args) => {
 
-    if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:by:752306236606906399> Bu komutu kullanabilmek için "\`yönetici\`" yetkisine sahip olmalısın`);
-
+    if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(` Bu komutu kullanabilmek için "\`yönetici\`" yetkisine sahip olmalısın`);
 if(args[0] === "sıfırla") {
 const sıfırlandı = new discord.MessageEmbed()
 .setAuthor(client.user.username, client.user.avatarURL())  
 .setTitle(`${client.user.username} - Kız Rol Sıfırla `)
 .setColor('BLACK')
-.setDescription(`<a:hg:752305081545916438> Sunucu İçin Ayarladığınız Kız Rolü Başarıyla Sıfırlandı !`)
+.setDescription(` Sunucu İçin Ayarladığınız Kız Rolü Başarıyla Sıfırlandı !`)
 .setThumbnail(client.user.avatarURL)
 .setFooter(`Komut ${message.author.tag} Tarafından Kullanıldı ! `)
 message.channel.send(sıfırlandı)
@@ -24,7 +23,7 @@ if (!rol) {
 .setAuthor(client.user.username, client.user.avatarURL())  
 .setTitle(`${client.user.username} - Kız Rol Ayarla `)
 .setColor('BLACK')
-.setDescription(`<a:by:752306236606906399> Ayarlayacağınız Kız Rolünü Belirtiniz ! `)
+.setDescription(` Ayarlayacağınız Kız Rolünü Belirtiniz ! `)
 .setThumbnail(client.user.avatarURL)
 .setFooter(`Komut ${message.author.tag} Tarafından Kullanıldı ! `)
 message.channel.send(ayarlanmadı)
@@ -34,7 +33,7 @@ const ayarlandı = new discord.MessageEmbed()
 .setAuthor(client.user.username, client.user.avatarURL)  
 .setTitle(`${client.user.username} - kız Rol Ayarlandı `)
 .setColor('BLACK')
-.setDescription(`<a:hg:752305081545916438> Kız Rolü Başarıyla ${rol} Olarak Ayarlandı ! `)
+.setDescription(` Kız Rolü Başarıyla ${rol} Olarak Ayarlandı ! `)
 .setThumbnail(client.user.avatarURL)
 .setFooter(`Komut ${message.author.tag} Tarafından Kullanıldı ! `)
 message.channel.send(ayarlandı)

@@ -3,14 +3,14 @@ const db = require('quick.db')
 
 exports.run = async(client, message, args) => {
 
-  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:by:752306236606906399> Bu komutu kullanabilmek için "\`yönetici\`" yetkisine sahip olmalısın`);
+  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`Bu komutu kullanabilmek için "\`yönetici\`" yetkisine sahip olmalısın`);
 
 if(args[0] === "sıfırla") {
 const sıfırlandı = new discord.MessageEmbed()
 .setAuthor(client.user.username, client.user.avatarURL)  
 .setTitle(`${client.user.username} - Kayıtçı Rol Sıfırla `)
 .setColor('BLACK')
-.setDescription(`<a:hg:752305081545916438> Sunucu İçin Ayarladığınız Kayıtçı Rol Başarıyla Sıfırlandı ! `)
+.setDescription(` Sunucu İçin Ayarladığınız Kayıtçı Rol Başarıyla Sıfırlandı ! `)
 .setThumbnail(client.user.avatarURL)
 .setFooter(`Komut ${message.author.tag} Tarafından Kullanıldı ! `)
 message.channel.send(sıfırlandı)
@@ -24,7 +24,7 @@ if (!rol) {
 .setAuthor(client.user.username, client.user.avatarURL())  
 .setTitle(`${client.user.username} - Kayıtçı Rol Ayarla `)
 .setColor('BLACK')
-.setDescription(`<a:by:752306236606906399> Ayarlayacağınız Kayıtçı Rolü Belirtiniz ! `)
+.setDescription(` Ayarlayacağınız Kayıtçı Rolü Belirtiniz ! `)
 .setThumbnail(client.user.avatarUR())
 .setFooter(`Komut ${message.author.tag} Tarafından Kullanıldı ! `)
 message.channel.send(ayarlanmadı)
@@ -34,7 +34,7 @@ const ayarlandı = new discord.MessageEmbed()
 .setAuthor(client.user.username, client.user.avatarURL)  
 .setTitle(`${client.user.username} - Kayıtçı Rol Ayarlandı `)
 .setColor('BLACK')
-.setDescription(`<a:hg:752305081545916438> Kayıt Edecek Rol Başarıyla ${rol} Olarak Ayarlandı ! `)
+.setDescription(` Kayıt Edecek Rol Başarıyla ${rol} Olarak Ayarlandı ! `)
 .setThumbnail(client.user.avatarURL)
 .setFooter(`Komut ${message.author.tag} Tarafından Kullanıldı ! `)
 message.channel.send(ayarlandı)

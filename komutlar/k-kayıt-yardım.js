@@ -9,23 +9,23 @@ exports.run = async(client, message, args) => {
     const embed = new Discord.MessageEmbed()
         .setAuthor(`${client.user.username} `, client.user.displayAvatarURL({dynamic: true}))
         .setColor('#d02090')
-       .setTitle(`<a:ykleniyor:752305324588793896> **Lydia Bot Kayıt Menüsüne Hoşgeldiniz** <a:ykleniyor:752305324588793896>`)
+       .setTitle(` **Lydia Bot Kayıt Menüsüne Hoşgeldiniz** `)
         .setDescription(`
  
-  **» ${prefix}alınacak-rol** <a:sagok:749305875188940983> Kayıt Edilen Kişiden Alınacak Rolü Ayarlar.
-  **» ${prefix}alınacak-rol sıfırla ** <a:sagok:749305875188940983> Kayıt Edilen Kişiden Alınacak Rolü Sıfırlar.
-  **» ${prefix}kayıt-kanal** <a:sagok:749305875188940983> Kayıtın Yapılacağı Kanalı Belirlersiniz.
-  **» ${prefix}kayıt-kanal sıfırla** <a:sagok:749305875188940983> Kayıtın Yapılacağı Kanalı Sıfırlarsınız.
-  **» ${prefix}kayıt-hg ** <a:sagok:749305875188940983> Gelen Kullanıcılara Kayıt Bilgisi Verir.
-  **» ${prefix}kayıt-hg sıfırla ** <a:sagok:749305875188940983> Kayıt Hg sistemini sıfırlar.
-  **» ${prefix}kayıt-yetkili** <a:sagok:749305875188940983> Kayıt Edebilecek Yetkiyi Ayarlar.
-  **» ${prefix}kayıt-yetkili sıfırla** <a:sagok:749305875188940983> Kayıt Edebilecek Yetkiyi Sıfırlar.
-  **» ${prefix}erkek-rol ** <a:sagok:749305875188940983> Kayıt Edilince Verilecek Erkek Rolü Ayarlar.
-  **» ${prefix}erkek-rol sıfırla ** <a:sagok:749305875188940983> Kayıt Edilince Verilecek Erkek Rolünü Sıfırlar.
-  **» ${prefix}kız-rol** <a:sagok:749305875188940983> Kayıt Edilince Verilecek Kız Rolü Ayarlar.
-  **» ${prefix}kız-rol sıfırla** <a:sagok:749305875188940983> Kayıt Edilince Verilecek Kız Rolünü Sıfırlar.
-  **» ${prefix}erkek ** <a:sagok:749305875188940983> Erkekleri Kayıt Etmeye Yarar.
-  **» ${prefix}kız ** <a:sagok:749305875188940983> Kızları Kayıt Etmeye Yarar.
+  **» ${prefix}alınacak-rol**  Kayıt Edilen Kişiden Alınacak Rolü Ayarlar.
+  **» ${prefix}alınacak-rol sıfırla **  Kayıt Edilen Kişiden Alınacak Rolü Sıfırlar.
+  **» ${prefix}kayıt-kanal** Kayıtın Yapılacağı Kanalı Belirlersiniz.
+  **» ${prefix}kayıt-kanal sıfırla** Kayıtın Yapılacağı Kanalı Sıfırlarsınız.
+  **» ${prefix}kayıt-hg **  Gelen Kullanıcılara Kayıt Bilgisi Verir.
+  **» ${prefix}kayıt-hg sıfırla **  Kayıt Hg sistemini sıfırlar.
+  **» ${prefix}kayıt-yetkili** Kayıt Edebilecek Yetkiyi Ayarlar.
+  **» ${prefix}kayıt-yetkili sıfırla**  Kayıt Edebilecek Yetkiyi Sıfırlar.
+  **» ${prefix}erkek-rol **  Kayıt Edilince Verilecek Erkek Rolü Ayarlar.
+  **» ${prefix}erkek-rol sıfırla **  Kayıt Edilince Verilecek Erkek Rolünü Sıfırlar.
+  **» ${prefix}kız-rol**  Kayıt Edilince Verilecek Kız Rolü Ayarlar.
+  **» ${prefix}kız-rol sıfırla**  Kayıt Edilince Verilecek Kız Rolünü Sıfırlar.
+  **» ${prefix}erkek **  Erkekleri Kayıt Etmeye Yarar.
+  **» ${prefix}kız **  Kızları Kayıt Etmeye Yarar.
 ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 
 **»  ${prefix}davet __Botu Davet Edebilirsiniz!__**
@@ -36,7 +36,7 @@ exports.run = async(client, message, args) => {
 
 `)
         .setThumbnail(`https://cdn.discordapp.com/attachments/735925634336817283/762342094554791936/ezgif.com-optimize_8-1.gif`)
-               .addField(`» Lydia Bot Bağlantıları`, ` <a:alev:752289999642296370> [Bot Davet Linki](https://discord.com/oauth2/authorize?client_id=696458462187618315&scope=bot&permissions=8) **|** [Destek Sunucusu](https://discord.gg/FQVadvq) **|** [Oy Linki](http://bit.ly/lydiaoy) **|** <a:alev:752289999642296370>`)
+               .addField(`» Lydia Bot Bağlantıları`, `  [Bot Davet Linki](https://discord.com/oauth2/authorize?client_id=794184837355274270&permissions=1604&scope=bot) **|** [Oy Linki](Yakındaa...) `)
         .setFooter(`${message.author.username} Tarafından İstendi.`, message.author.displayAvatarURL({dynamic: true}))
     return message.channel.send(embed);
   
