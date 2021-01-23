@@ -8,7 +8,7 @@ var prefix = ayarlar.prefix;
 module.exports = client => {
 var oyun = [
         "!kayıt-sistemi",
-        "!yardım",
+        "!Gif-menü",
         "7 Sunucu 21.758 Kullanıcı ",
         "!ekonomi",
         "!moderasyon",

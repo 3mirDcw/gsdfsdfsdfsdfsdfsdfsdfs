@@ -318,7 +318,7 @@ client.on("messageUpdate", async (old, nev) => {
             .addField("Küfür:",nev)
         
             nev.delete();
-            const embeds = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(`<a:redke:763316512937082890> ${nev.author} , **Mesajı Editleyerek Küfür Etmene İzin Veremem!**`) 
+            const embeds = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(` ${nev.author} , **Mesajı Editleyerek Küfür Etmene İzin Veremem!**`) 
           client.channels.cache.get(y).send(embed)
             nev.channel.send(embeds).then(msg => msg.delete({timeout:5000}));
           
@@ -343,9 +343,9 @@ client.on("message", async msg => {
                  if (!msg.member.hasPermission("MANAGE_GUILD")) {
                  //  if (!ayarlar.gelistiriciler.includes(msg.author.id)) return ;
      msg.delete({timeout:750});
-                    const embeds = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(`<a:redke:763316512937082890> <@${msg.author.id}> , **Bu Sunucuda Küfür Yasak!**`)
+                    const embeds = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(` <@${msg.author.id}> , **Bu Sunucuda Küfür Yasak!**`)
       msg.channel.send(embeds).then(msg => msg.delete({timeout: 5000}));
-                const embed = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(`<a:redke:763316512937082890> ${msg.author} , **Küfür Etmeye Çalıştı!**`) .addField("Mesajı:",msg)
+                const embed = new Discord.MessageEmbed() .setColor("#ff7e00") .setDescription(` ${msg.author} , **Küfür Etmeye Çalıştı!**`) .addField("Mesajı:",msg)
                client.channels.cache.get(y).send(embed)
                   }              
                 } catch(err) {
@@ -708,7 +708,7 @@ client.on("guildMemberAdd", async member => {
     return client.channels.cache
       .get(kanal)
       .send(
-        "<a:GiriGif:753288764377399377> `" +
+        "✔️`" +
           member.user.username +
           "`**Adlı Kullanıcı Aramıza Katıldı!** `" +
           sayaç +
@@ -724,7 +724,7 @@ client.on("guildMemberAdd", async member => {
     return client.channels
       .get(kanal)
       .send(
-        `<a:hg:752305081545916438> **Sayaç Sıfırlandı!** \`${member.guild.memberCount}\` **Kişiyiz!**`
+        ` **Sayaç Sıfırlandı!** \`${member.guild.memberCount}\` **Kişiyiz!**`
       );
     await db.delete(`sayacK_${member.guild.id}`);
     await db.delete(`sayacS_${member.guild.id}`);
@@ -761,7 +761,7 @@ client.on("guildMemberRemove", async member => {
     return client.channels.cache
       .get(kanal)
       .send(
-        "<a:kGif:753288772715675699> `" +
+        ":(`" +
           member.user.username +
           "` **Adlı Kullanıcı Aramızdan Ayrıldı.**`" +
           sayaç +
@@ -839,7 +839,7 @@ client.on("guildMemberAdd", async member => {
     client.channels.cache
       .get(kanal)
       .send(
-        "<a:hg:752305081545916438>" +
+        "<3" +
           member.user.username +
           "`** HoşGeldin! Otomatik Rolün Verildi Seninle Beraber** `" +
           member.guild.memberCount +
@@ -1594,7 +1594,7 @@ if(member.user.bot) return;
     if (!davetsayiv2) davetsayi = 0;
      else davetsayi = await db.fetch(`davet_${invite.inviter.id}_${member.guild.id}`);
 
-client.channels.cache.get(kanal).send(` <a:hg:752305081545916438> ${member} Adlı Kullanıcı Aramıza Katıldı. Kullanıcıyı Davet Eden  ${daveteden}  Toplam **${davetsayi}** Daveti Oldu`)  
+client.channels.cache.get(kanal).send(` ✔️ ${member} Adlı Kullanıcı Aramıza Katıldı. Kullanıcıyı Davet Eden  ${daveteden}  Toplam **${davetsayi}** Daveti Oldu`)  
 
       }
     
@@ -1611,10 +1611,10 @@ client.on("guildMemberRemove", async member => {
   let davetsayi = await db.fetch(`davet_${davetçi}_${member.guild.id}`);
   
   if (!davetçi) {
-    return client.channels.cache.get(kanal).send(`<a:by:752306236606906399> ${member} Adlı Kullanıcı Aramızdan Ayarıldı Davet Eden Bulunamadı!`);
+    return client.channels.cache.get(kanal).send(`:(  ${member} Adlı Kullanıcı Aramızdan Ayarıldı Davet Eden Bulunamadı!`);
   } else {
      
-client.channels.cache.get(kanal).send(`<a:by:752306236606906399> ${member} Adlı Kullanıcı Aramızadan Ayrıldı Kullanıcıyı Davet Eden ${daveteden}  Toplam  **${davetsayi}** Daveti Kaldı`)  
+client.channels.cache.get(kanal).send(` ${member} Adlı Kullanıcı Aramızadan Ayrıldı Kullanıcıyı Davet Eden ${daveteden}  Toplam  **${davetsayi}** Daveti Kaldı`)  
   
       }
     }
@@ -1650,10 +1650,10 @@ client.on("guildMemberAdd", member => {
   var kontrol = [];
 
   if (ayyy < 1) {
-    kontrol = "**Şüpheli** <a:gvenlidegil:752305155772383302>";
+    kontrol = "**Şüpheli** ";
   }
   if (ayyy > 1) {
-    kontrol = "**Güvenilir** <a:gvenli:752305117918789634>";
+    kontrol = "**Güvenilir** ";
   }
 
   if (!kanal) return;
@@ -1678,17 +1678,17 @@ client.on("guildMemberAdd", member => {
     )
 
     .setDescription(
-      `<a:welcome:752289859531440159> **Hoşgeldin!** ${
+      ` **Hoşgeldin!** ${
         member.user
       }, seninle beraber **${
         guild.memberCount
-      }** kişi olduk! \n <a:elmas:752296630115369010> Kaydının yapılması için  **İsim** ve **Yaş** Yazman Gerek. \n <a:YklenmeGif:753288640121012244> Hesap Kuruluş: **${moment(
+      }** kişi olduk! \n  Kaydının yapılması için  **İsim** ve **Yaş** Yazman Gerek. \n  Hesap Kuruluş: **${moment(
         user.createdAt
       ).format("DD")} ${aylar[moment(user.createdAt).format("MM")]} ${moment(
         user.createdAt
       ).format(
         "YYYY HH:mm:ss"
-       )}** \n <a:ykleniyor:752305324588793896> Bu vatandaş: ${kontrol} \n <a:sagadogru:735869816103108689> <@&${kayıtçı}> Rolundeki Yetkililer Sizinle İlgilecektir
+       )}** \n  Bu vatandaş: ${kontrol} \n  <@&${kayıtçı}> Rolundeki Yetkililer Sizinle İlgilecektir
 
   `
     );
@@ -1704,7 +1704,7 @@ client.on("guildMemberAdd", member => {
 //sa-as
 
    const saasembed = new Discord.MessageEmbed()
-////.setTitle('Bir Gold Üye Belirdi! <a:wavygolduye:742353872013754428>')
+////.setTitle('Bir Gold Üye Belirdi! ')
 .setDescription('❤ Aleyküm Selam. Hoş Geldin! ❤')
 .setTimestamp()
 .setFooter('ShowTeam')
