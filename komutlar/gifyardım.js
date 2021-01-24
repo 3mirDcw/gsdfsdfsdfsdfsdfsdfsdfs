@@ -21,11 +21,11 @@ exports.run = async(client, message, args) => {
         **<a:B_Ileri:802635594169188382> ${prefix}marvel-gif** Rastgele Marvel Gifi Atar!
 ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 
-** <a:B_Ileri:802635594169188382>  ${prefix}davet __Botu Davet Edebilirsiniz!__**
+** <a:B_Ileri:802635594169188382> ${prefix}davet __Botu Davet Edebilirsiniz!__**
 ** <a:B_Ileri:802635594169188382> ${prefix}sunucutanıt __Sunucunuzu Tanıtabilirsiniz.__**
-** \<a:B_Ileri:802635594169188382>${prefix}istatistik __Yazarak Botun İstatistiklerini Göre Bilirsiniz.__**
-**»  ${prefix}prefix __Yazarak Botun Prefixini Değiştirebilirsiniz.__**
-**»  ${prefix}prefix-sıfırla __Yazarak Ayarladığınız Prefixi Sıfırlayabilirsiniz.__**
+** <a:B_Ileri:802635594169188382> ${prefix}istatistik __Yazarak Botun İstatistiklerini Göre Bilirsiniz.__**
+** <a:B_Ileri:802635594169188382> ${prefix}prefix __Yazarak Botun Prefixini Değiştirebilirsiniz.__**
+** <a:B_Ileri:802635594169188382>  ${prefix}prefix-sıfırla __Yazarak Ayarladığınız Prefixi Sıfırlayabilirsiniz.__**
 
 `)
         .setThumbnail(`https://cdn.discordapp.com/attachments/735925634336817283/762342094554791936/ezgif.com-optimize_8-1.gif`)
