@@ -10,20 +10,20 @@ exports.run = async(client, message, args) => {
         .setColor('#d02090')
        .setTitle(` **ShowTeam Bot Moderasyon Menüsüne Hoşgeldiniz** `)
         .setDescription(`
-  **» 🛠️ ${prefix}mod-log** Mod-Log Kanalını Belirlersiniz.
-  **» 🛠️ ${prefix}mod-log kapat** Ayarlanan Mod-Log Kanalı Kapatılır.
-  **» 🛠️ ${prefix}oylama ** Oylama Yaparsınız
-  **» 🛠️ ${prefix}yasaklı-tag ** Yasaklı Tag Ayarlar.
-  **» 🛠️ ${prefix}otorol-ayarla**Otorol Ayarlar.
-  **» 🛠️ ${prefix}otorol-mesaj**Otorol Mesajı Ayarlar.
-  **» 🛠️ ${prefix}otorol-sıfırla**Otorol Sıfırlar.
-  **» 🛠️ ${prefix}sayaç-ayarla**Sayaç Ayarlar.
-  **» 🛠️ ${prefix}ban ** Kullanıcıyı Banlar.
-  **» 🛠️ ${prefix}kick ** Etiketlenen Kullanıcıyı Sunucudan Atar.
-  **» 🛠️ ${prefix}sa-as aç **SA-AS Sistemini Açar.
-  **» 🛠️ ${prefix}sa-as kapat ** SA-AS Sistemini Kapatır.
-  **» 🛠️ ${prefix}emoji-ekle ** Emoji Ekler.
-  **» 🛠️ ${prefix}çekiliş **Çekiliş yaparsınız.
+  **» <a:altin1:797015226196688949> ${prefix}mod-log** Mod-Log Kanalını Belirlersiniz.
+  **» <a:altin1:797015226196688949> ${prefix}mod-log kapat** Ayarlanan Mod-Log Kanalı Kapatılır.
+  **» <a:altin1:797015226196688949> ${prefix}oylama ** Oylama Yaparsınız
+  **» <a:altin1:797015226196688949> ${prefix}yasaklı-tag ** Yasaklı Tag Ayarlar.
+  **» <a:altin1:797015226196688949> ${prefix}otorol-ayarla**Otorol Ayarlar.
+  **» <a:altin1:797015226196688949> ${prefix}otorol-mesaj**Otorol Mesajı Ayarlar.
+  **» <a:altin1:797015226196688949> ${prefix}otorol-sıfırla**Otorol Sıfırlar.
+  **» <a:altin1:797015226196688949> ${prefix}sayaç-ayarla**Sayaç Ayarlar.
+  **» <a:altin1:797015226196688949> ${prefix}ban ** Kullanıcıyı Banlar.
+  **» <a:altin1:797015226196688949> ${prefix}kick ** Etiketlenen Kullanıcıyı Sunucudan Atar.
+  **» <a:altin1:797015226196688949> ${prefix}sa-as aç **SA-AS Sistemini Açar.
+  **» <a:altin1:797015226196688949> ${prefix}sa-as kapat ** SA-AS Sistemini Kapatır.
+  **» <a:altin1:797015226196688949> ${prefix}emoji-ekle ** Emoji Ekler.
+  **» <a:altin1:797015226196688949> ${prefix}çekiliş **Çekiliş yaparsınız.
 ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 
 **»  ${prefix}davet __Botu Davet Edebilirsiniz!__**

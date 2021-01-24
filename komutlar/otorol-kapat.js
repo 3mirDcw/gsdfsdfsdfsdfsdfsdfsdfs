@@ -4,10 +4,10 @@ exports.run = (client, message, args) => {
 
 if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:by:752306236606906399> **Bu komutu kullanabilmek için** "\`Yönetici\`" **yetkisine sahip olmalısın.**`);
  const rol = db.fetch(`otoRL_${message.guild.id}`)  
- if(!rol) return message.reply(`<a:by:752306236606906399>  **Bu özellik zaten kapalı! **`)
+ if(!rol) return message.reply(`<a:kabul:802835416075862019>  **Bu özellik zaten kapalı! **`)
  
  
-  message.channel.send(`<a:hg:752305081545916438>  **Kayıt Sistemi başarılı bir şekilde kapatıldı.**`)
+  message.channel.send(`<a:kabul:802835416075862019>  **Otorol Sistemi başarılı bir şekilde kapatıldı.**`)
 
  
   db.delete(`otoRL_${message.guild.id}`)  
