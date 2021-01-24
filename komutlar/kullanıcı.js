@@ -11,20 +11,22 @@ exports.run = async(client, message, args) => {
         .setColor('#d02090')
        .setTitle(` **ShowTeam Bot  Kullanıcı Menüsüne Hoşgeldiniz** `)
         .setDescription(`
-  **» ${prefix}avatar**  Avatarınızı Atar.
-  **» ${prefix}sunucutanıt**  Sunucunuzu Tanıtır.
-  **» ${prefix}kullanıcı-bilgi**  Etiketlediğiniz Kişinin Kullanıcı Bilgisini Gösterir.
-  **» ${prefix}kanalbilgi **  Belirtilen Kanal Hakkında Bilgi Verir.
-  **» ${prefix}davet**  Botu Davet Edersiniz!
-  **» ${prefix}korona **  Korona Hakkında Bilgi Alırsınız.
-  **» ${prefix}id **  Etiketlediğiniz Kişini İD sini atar.
-  **» ${prefix}mcskin **  İsmini Girdiğiniz Skini Fotosunu Atar.
-  **» ${prefix}emoji-bilgi**  İsmini Yazdığınız Emoji Hakkında Bilgi Alırsınız.
-  **» ${prefix}saat **  Saati Gösterir.(Kendinde Bakabilirsin Ama)
-  **» ${prefix}say**  Sunucuda ki Üye Durumlarını Gösterir.
-  **» ${prefix}sunucu-bilgi** Sunucu Hakkın da Bilgi Verir.
-  **» ${prefix}sunucu-resim**  Sunucunun İconunu Atar.
-  **» ${prefix}yetkilerim**  Sunucuda ki Yetkilerinizi Gösterir.
+  **» <a:kullanici:686200700820389909> ${prefix}avatar**  Avatarınızı Atar.
+  **» <a:kullanici:686200700820389909> ${prefix}sunucutanıt**  Sunucunuzu Tanıtır.
+  **» <a:kullanici:686200700820389909> ${prefix}kullanıcı-bilgi**  Etiketlediğiniz Kişinin Kullanıcı Bilgisini Gösterir.
+  **» <a:kullanici:686200700820389909> ${prefix}kanalbilgi **  Belirtilen Kanal Hakkında Bilgi Verir.
+  **» <a:kullanici:686200700820389909> ${prefix}davet**  Botu Davet Edersiniz!
+  **» <a:kullanici:686200700820389909> ${prefix}korona **  Korona Hakkında Bilgi Alırsınız.
+  **» <a:kullanici:686200700820389909> ${prefix}id **  Etiketlediğiniz Kişini İD sini atar.
+  **» <a:kullanici:686200700820389909> ${prefix}mcskin **  İsmini Girdiğiniz Skini Fotosunu Atar.
+  **» <a:kullanici:686200700820389909> ${prefix}emoji-bilgi**  İsmini Yazdığınız Emoji Hakkında Bilgi Alırsınız.
+  **» <a:kullanici:686200700820389909> ${prefix}saat **  Saati Gösterir.(Kendinde Bakabilirsin Ama)
+  **» <a:kullanici:686200700820389909> ${prefix}say**  Sunucuda ki Üye Durumlarını Gösterir.
+  **» <a:kullanici:686200700820389909> ${prefix}sunucu-bilgi** Sunucu Hakkın da Bilgi Verir.
+  **» <a:kullanici:686200700820389909> ${prefix}sunucu-resim**  Sunucunun İconunu Atar.
+  **» <a:kullanici:686200700820389909> ${prefix}yetkilerim**  Sunucuda ki Yetkilerinizi Gösterir.
+  **» <a:kullanici:686200700820389909> ${prefix}emoji-ekle Yazdığınız Emojiyi Ekler.
+  **» <a:kullanici:686200700820389909> ${prefix}Davet**  Avatarınızı Atar.
 ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 
 **»  ${prefix}davet __Botu Davet Edebilirsiniz!__**
