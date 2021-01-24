@@ -10,20 +10,20 @@ exports.run = async(client, message, args) => {
         .setColor('#d02090')
        .setTitle(` **ShowTeam Bot Moderasyon Menüsüne Hoşgeldiniz** `)
         .setDescription(`
-  **» ${prefix}mod-log** Mod-Log Kanalını Belirlersiniz.
-  **» ${prefix}mod-log kapat** Ayarlanan Mod-Log Kanalı Kapatılır.
-  **» ${prefix}oylama ** Oylama Yaparsınız
-  **» ${prefix}yasaklı-tag ** Yasaklı Tag Ayarlar.
-  **» ${prefix}otorol-ayarla**Otorol Ayarlar.
-  **» ${prefix}otorol-mesaj**Otorol Mesajı Ayarlar.
-  **» ${prefix}otorol-sıfırla**Otorol Sıfırlar.
-  **» ${prefix}sayaç-ayarla**Sayaç Ayarlar.
-  **» ${prefix}ban ** Kullanıcıyı Banlar.
-  **» ${prefix}kick ** Etiketlenen Kullanıcıyı Sunucudan Atar.
-  **» ${prefix}sa-as aç **SA-AS Sistemini Açar.
-  **» ${prefix}sa-as kapat ** SA-AS Sistemini Kapatır.
-  **» ${prefix}emoji-ekle ** Emoji Ekler.
-  **» :dikkat: ${prefix}çekiliş **Çekiliş yaparsınız.
+  **» 🛠️ ${prefix}mod-log** Mod-Log Kanalını Belirlersiniz.
+  **» 🛠️ ${prefix}mod-log kapat** Ayarlanan Mod-Log Kanalı Kapatılır.
+  **» 🛠️ ${prefix}oylama ** Oylama Yaparsınız
+  **» 🛠️ ${prefix}yasaklı-tag ** Yasaklı Tag Ayarlar.
+  **» 🛠️ ${prefix}otorol-ayarla**Otorol Ayarlar.
+  **» 🛠️ ${prefix}otorol-mesaj**Otorol Mesajı Ayarlar.
+  **» 🛠️ ${prefix}otorol-sıfırla**Otorol Sıfırlar.
+  **» 🛠️ ${prefix}sayaç-ayarla**Sayaç Ayarlar.
+  **» 🛠️ ${prefix}ban ** Kullanıcıyı Banlar.
+  **» 🛠️ ${prefix}kick ** Etiketlenen Kullanıcıyı Sunucudan Atar.
+  **» 🛠️ ${prefix}sa-as aç **SA-AS Sistemini Açar.
+  **» 🛠️ ${prefix}sa-as kapat ** SA-AS Sistemini Kapatır.
+  **» 🛠️ ${prefix}emoji-ekle ** Emoji Ekler.
+  **» 🛠️ ${prefix}çekiliş **Çekiliş yaparsınız.
 ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 
 **»  ${prefix}davet __Botu Davet Edebilirsiniz!__**
