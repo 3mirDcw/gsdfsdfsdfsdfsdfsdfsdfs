@@ -47,6 +47,6 @@ module.exports = client => {
             }
   console.log(`BOT: ${client.user.username} ismi ile giriş yapıldı!`);
   client.user.setStatus("idle");
-  client.user.setActivity(`https://mollymalone.glitch.me ${tarih}`, { type: "LISTENING"});
+  client.user.setActivity(`🚀 !yardım 🔥 !moderasyon 🚀 !moderasyon2 🔥  !gif-menü 🚀 !kayıt-sistemi`, { type: "LISTENING"});
   console.log(`BOT: Şu an ` + client.channels.size + ` adet kanala, ` + client.guilds.size + ` adet sunucuya ve ` + client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString() + ` kullanıcıya hizmet veriliyor!`);
 };
