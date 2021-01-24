@@ -20,6 +20,7 @@ exports.run = async(client, message, args) => {
   **» <a:tamir:797015213634748436> ${prefix}temizle **  Belirlenen Miktarda Mesaj Siler.
   **» <a:tamir:797015213634748436> ${prefix}sunucupanel **  Sunucu Panel Açar.
   **» <a:tamir:797015213634748436> ${prefix}unban ** İdsi Girelen Kullanıcıyı Banının Açar.
+  **» <a:tamir:797015213634748436> ${prefix}bakım ** Kanalı Bakıma Alır.
 ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 
 **»  ${prefix}davet __Botu Davet Edebilirsiniz!__**
