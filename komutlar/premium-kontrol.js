@@ -8,7 +8,7 @@ exports.run = async (client, message, args) => {
   if (nemesis == 'aktif') nemesisYazi = ' Bu sunucu için premium mod aktif.'
   if (nemesis == 'deaktif') nemesisYazi = ' Bu sunucuda premium mod aktif değil.'
   const embed = new Discord.MessageEmbed()
-  .setTitle('Lydia - Premium Kontrol')
+  .setTitle('ShowTeam- Premium Kontrol')
   .setColor("BLUE")
   .setDescription(nemesisYazi)
   message.channel.send(embed)

@@ -12,18 +12,18 @@ exports.run = async(client, message, args) => {
        .setTitle(` **ShowTeam Bot  Gif Menüsüne Hoşgeldiniz** `)
         .setDescription(`
  
-        **${prefix}gif-ara**  Yazdığınız Kelime Hakkında Gif Aratır!
-        **${prefix}man-gif**  Rastgele Erkek Gifi Atar!
-        **${prefix}woman-gif**  Rastgele Kadın Gifi Atar!
-        **${prefix}couple-gif** Rastgele Sevgili Gifi Atar!
-        **${prefix}baby-gif** Rastgele Bebek Gifi Atar!
-        **${prefix}animal-gif**  Rastgele Hayvan Gifi Atar!
-        **${prefix}marvel-gif** Rastgele Marvel Gifi Atar!
+        **<a:B_Ileri:802635594169188382> ${prefix}gif-ara**  Yazdığınız Kelime Hakkında Gif Aratır!
+        **<a:B_Ileri:802635594169188382> ${prefix}man-gif**  Rastgele Erkek Gifi Atar!
+        **<a:B_Ileri:802635594169188382> ${prefix}woman-gif**  Rastgele Kadın Gifi Atar!
+        **<a:B_Ileri:802635594169188382> ${prefix}couple-gif** Rastgele Sevgili Gifi Atar!
+        **<a:B_Ileri:802635594169188382> ${prefix}baby-gif** Rastgele Bebek Gifi Atar!
+        **<a:B_Ileri:802635594169188382> ${prefix}animal-gif**  Rastgele Hayvan Gifi Atar!
+        **<a:B_Ileri:802635594169188382> ${prefix}marvel-gif** Rastgele Marvel Gifi Atar!
 ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 
-**»  ${prefix}davet __Botu Davet Edebilirsiniz!__**
-**»  ${prefix}sunucutanıt __Sunucunuzu Tanıtabilirsiniz.__**
-**»  ${prefix}istatistik __Yazarak Botun İstatistiklerini Göre Bilirsiniz.__**
+** <a:B_Ileri:802635594169188382>  ${prefix}davet __Botu Davet Edebilirsiniz!__**
+** <a:B_Ileri:802635594169188382> ${prefix}sunucutanıt __Sunucunuzu Tanıtabilirsiniz.__**
+** \<a:B_Ileri:802635594169188382>${prefix}istatistik __Yazarak Botun İstatistiklerini Göre Bilirsiniz.__**
 **»  ${prefix}prefix __Yazarak Botun Prefixini Değiştirebilirsiniz.__**
 **»  ${prefix}prefix-sıfırla __Yazarak Ayarladığınız Prefixi Sıfırlayabilirsiniz.__**
 
