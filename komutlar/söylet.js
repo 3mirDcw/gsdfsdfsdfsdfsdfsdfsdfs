@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = (client, message, args) => {
   let mesaj = args.slice(0).join(' ');
-if (mesaj.length < 1) return message.reply('Hiçbir şey mi yazayım :face_with_raised_eyebrow: Yazacağım şeyi belirt...');
+if (mesaj.length < 1) return message.reply('Hiçbir şey mi yazayım <a:red:802835418236059658> Yazacağım şeyi belirt...');
   message.delete();
   message.channel.send(mesaj);
 };
