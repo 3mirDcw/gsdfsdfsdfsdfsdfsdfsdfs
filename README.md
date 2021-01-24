@@ -1,1 +1,1 @@
-# ShowTeam# Sheka altyapısı
+# ShowTeam Altyapii
