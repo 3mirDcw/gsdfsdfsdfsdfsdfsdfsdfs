@@ -30,7 +30,7 @@ exports.run = async(client, message, args) => {
 
 `)
         .setThumbnail(`https://cdn.discordapp.com/attachments/735925634336817283/762342094554791936/ezgif.com-optimize_8-1.gif`)
-                .addField(`» ShowTeam Bot Bağlantıları`, `  [Bot Davet Linki](discord.com/oauth2/authorize?client_id=794184837355274270&permissions=8&scope=bot) **|** [Destek Sunucusu](https://discord.gg/TVxBQMtEBh) **|** [Oy Linki](Yakında..) **|** `)
+                .addField(`» ShowTeam Bot Bağlantıları`, `  [Bot Davet Linki](https://discord.com/oauth2/authorize?client_id=794184837355274270&scope=bot&permissions=1074129984) **|** [Destek Sunucusu](https://discord.gg/TVxBQMtEBh) **|** [Oy Linki](Yakında..) **|** `)
         .setFooter(`${message.author.username} Tarafından İstendi.`, message.author.displayAvatarURL({dynamic: true}))
     return message.channel.send(embed);
   

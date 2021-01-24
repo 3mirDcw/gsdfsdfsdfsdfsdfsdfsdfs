@@ -26,15 +26,12 @@ exports.run = async(client, message, args) => {
   **» <a:altin1:797015226196688949> ${prefix}çekiliş **Çekiliş yaparsınız.
 ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 
-**»  ${prefix}davet __Botu Davet Edebilirsiniz!__**
-**»  ${prefix}sunucutanıt __Sunucunuzu Tanıtabilirsiniz.__**
-**»  ${prefix}istatistik __Yazarak Botun İstatistiklerini Göre Bilirsiniz.__**
 **»  ${prefix}prefix __Yazarak Botun Prefixini Değiştirebilirsiniz.__**
 **»  ${prefix}prefix-sıfırla __Yazarak Ayarladığınız Prefixi Sıfırlayabilirsiniz.__**
 
 `)
         .setThumbnail(`https://cdn.discordapp.com/attachments/735925634336817283/762342094554791936/ezgif.com-optimize_8-1.gif`)
-                .addField(`» ShowTeam Bot Bağlantıları`, `  [Bot Davet Linki](https://discord.com/oauth2/authorize?client_id=794184837355274270&permissions=1604&scope=bot) **|** [Destek Sunucusu](https://discord.gg/TVxBQMtEBh) **|** [Oy Linki](Yakında)`)
+                .addField(`» ShowTeam Bot Bağlantıları`, `  [Bot Davet Linki](https://discord.com/oauth2/authorize?client_id=794184837355274270&scope=bot&permissions=1074129984) **|** [Destek Sunucusu](https://discord.gg/TVxBQMtEBh) **|** [Oy Linki](Yakında)`)
         .setFooter(`${message.author.username} Tarafından İstendi.`, message.author.displayAvatarURL({dynamic: true}))
     return message.channel.send(embed);
   
@@ -50,6 +47,6 @@ exports.conf = {
 
 exports.help = {
   name: 'moderasyon2',
-  description: 'a!davet-sistemi Menüsü',
+  description: '!davet-sistemi Menüsü',
   usage: 'moderasyon'
 };
