@@ -470,7 +470,7 @@ client.on("guildMemberAdd", async member => {
 
   const attachment = new Discord.MessageAttachment(
     canvas.toBuffer(),
-    "ro-BOT-hosgeldin.png"
+    "hosgeldin.png"
   );
 
   canvaskanal.send(attachment);
