@@ -26,7 +26,8 @@ exports.run = async(client, message, args) => {
   **» <a:kullanici:686200700820389909> ${prefix}sunucu-resim**  Sunucunun İconunu Atar.
   **» <a:kullanici:686200700820389909> ${prefix}yetkilerim**  Sunucuda ki Yetkilerinizi Gösterir.
   **» <a:kullanici:686200700820389909> ${prefix}emoji-ekle** Yazdığınız Emojiyi Ekler.
-  **» <a:kullanici:686200700820389909> ${prefix}Davet**  Botun Davet Linkini Görebilirsin
+  **» <a:kullanici:686200700820389909> ${prefix}Davet**  Botun Davet Linkini Görebilirsin.
+  **» <a:kullanici:686200700820389909> ${prefix}sunucu-kur**  Sunucu Kurar (Kanalları Silmez)
 ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 
 **»  ${prefix}davet __Botu Davet Edebilirsiniz!__**
