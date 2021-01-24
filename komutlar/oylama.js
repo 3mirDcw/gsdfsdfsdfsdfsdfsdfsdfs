@@ -5,7 +5,7 @@ const Discord = require('discord.js');
    let user = message.author.username
    if (!question) return message.channel.send(
      new Discord.MessageEmbed()
-     .addField(`<a:by:706589001091383347> **Yazı Yazman Gerek** <a:by:706589001091383347> `)).then(m => m.delete(5000));
+     .addField(`<a:red:802835418236059658> **Yazı Yazman Gerek** <a:red:802835418236059658> `)).then(m => m.delete(5000));
      console.log("oylama komutu " + message.author.username + '#' + message.author.discriminator + " tarafından kullanıldı.")
      message.channel.send(
        new Discord.MessageEmbed()
@@ -14,8 +14,8 @@ const Discord = require('discord.js');
        .setTimestamp()
        .setFooter('Doktor Oylama Sistemi', client.user.displayAvatarURL())
        .addField(`**Oylama**`, `**${question}**`)).then(function(message) {
-         message.react('✅');
-         message.react('❌');
+         message.react('<a:kabul:802835416075862019>');
+         message.react('<a:red:802835418236059658>');
        });
      };
      exports.conf = {
