@@ -43,22 +43,17 @@ return message.channel.send(EmbedCrewCode)
 .then;
 */
 const embed = new Discord.MessageEmbed  ()
-.setColor("GOLD")
-.setTitle('Greedy Yardım Menüsü ')
+.setColor("Blue")
+.setTitle('Show Team Yardım ')
 .setDescription(`
- >    <a:hahi:799363706953793567> Greedy 1.1 Güncellemesi
- >     <a:hahi:799363706953793567> Duyurular
- >   <a:hahi:799363706953793567> Değişikler Oldu Ve Veriler Sıfırlandı Daha Fazla Bilgi Için !yenilikler
- 
-> <:onaypit:794219157796945970> [**!moderasyon**] → Moderasyon Komutları
-> <:onaypit:794219157796945970> [**!kullanıcı**] → Kullanıcı Komutları
-> <:onaypit:794219157796945970>  [**!moderasyon2**](https://discord.gg/4aN7bMNbdT) → Yetkili Komutları
- 
->     **<a:devp:776699041933295627> Bot Linkleri <a:devp:776699041933295627>**
-> <a:devp:776699041933295627> Botu Davet Et [Tıkla!](https://discord.com/oauth2/authorize?client_id=767480466957402173&scope=bot&permissions=268443710)
-> <a:devp:776699041933295627> Bota Oy Ver [Tıkla!](https://top.gg/bots/767480466957402173/)
-> <a:devp:776699041933295627> Bot Website [Tıkla!](https://greedybot.tk)
-> <a:devp:776699041933295627> Bot API Servisi Bilgileri [Tıkla!](https://sistemapileri.statuspage.io/)
+>    <a:9851_Loading:802635592928067584>  Show Team 1.4 Güncellemesi
+
+> <a:onay:686199897367511040> [ **!moderasyon** ] → Moderasyon Komutları
+> <a:onay:686199897367511040> [ **!kullanıcı** ] → Kullanıcı Komutları
+> <a:onay:686199897367511040>  [ **!moderasyon2** ] → Yetkili Komutları 2
+> <a:onay:686199897367511040>  [ !**gif-menü** ] Gif Komutları
+>     **<a:HaraketliEmoji198:802849819604680725> Bot Linkleri <a:HaraketliEmoji198:802849819604680725>**
+> <a:HaraketliEmoji198:802849819604680725> Botu Davet Et [Tıkla!](https://discord.com/oauth2/authorize?client_id=794184837355274270&scope=bot&permissions=8)
  
  
  

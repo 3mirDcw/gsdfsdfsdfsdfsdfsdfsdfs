@@ -12,7 +12,6 @@ exports.run = async(client, message, args) => {
        .setTitle(` **ShowTeam Bot  Gif Menüsüne Hoşgeldiniz** `)
         .setDescription(`
  
-        **<a:B_Ileri:802635594169188382> ${prefix}gif-ara**  Yazdığınız Kelime Hakkında Gif Aratır!
         **<a:B_Ileri:802635594169188382> ${prefix}man-gif**  Rastgele Erkek Gifi Atar!
         **<a:B_Ileri:802635594169188382> ${prefix}woman-gif**  Rastgele Kadın Gifi Atar!
         **<a:B_Ileri:802635594169188382> ${prefix}couple-gif** Rastgele Sevgili Gifi Atar!
