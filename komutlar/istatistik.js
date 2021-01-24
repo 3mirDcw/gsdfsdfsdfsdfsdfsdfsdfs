@@ -17,7 +17,7 @@ exports.run = (client, message) => {
   .addField("<a:B_Dikkat:802635594088972298>Toplam Kullanıcı Sayısı<a:B_Dikkat:802635594088972298>", `${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()}`, true)
   .addField("<:1807_NitroDiamond:802635582521737217>Kanal Sayısı<:1807_NitroDiamond:802635582521737217>", `${client.channels.cache.size.toLocaleString()}`, true)
   .addField(`<a:online:797015220895612958>Ne Kadar Süredir Aktif<a:online:797015220895612958>`, `${duration}`, true)
-  .addField("<a:load:797015222316564510>Ping<a:load:7970152223165>64510>", `${client.ws.ping}`, true)
+  .addField("<a:load:797015222316564510>Ping<a:load:797015222316564510>", `${client.ws.ping}`, true)
   .addField("<a:HaraketliEmoji198:802849819604680725>Discord.js Sürümü<a:HaraketliEmoji198:802849819604680725>", `${Discord.version}`, true)
   .addField(`Destek Sunucum`, `[Tıkla](https://discord.gg/R39XmwyegZ)`, true)
   .addField(`Botu Davet Et`, `[Tıkla](https://discord.com/oauth2/authorize?client_id=794184837355274270&scope=bot&permissions=1074129984)`, true)
