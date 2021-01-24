@@ -1836,3 +1836,23 @@ db.delete(`time.${message.guild.id}.${message.author.id}`);
 });
 
 // spam engel bitiş
+////--------------BOTA DM ATANLAR BAŞLANGIÇ-------------////
+
+client.on("message", msg => {
+  var dm = client.channels.cache.get("802939948709445656");
+  if (msg.channel.type === "dm") {
+    if (msg.author.id === client.user.id) return;
+    const botdm = new Discord.MessageEmbed()
+      .setTitle(`${client.user.username} Dm`)
+      .setTimestamp()
+      .setColor("RANDOM")
+      .setThumbnail(`${msg.author.avatarURL()}`)
+      .addField("Gönderen", msg.author.tag)
+      .addField("Gönderen ID", msg.author.id)
+      .addField("Gönderilen Mesaj", msg.content);
+
+    dm.send(botdm);
+  }
+  if (msg.channel.bot) return;
+});
+///--------BOTA DM ATANLAR SONU-------------////
