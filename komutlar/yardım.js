@@ -49,15 +49,15 @@ const embed = new Discord.MessageEmbed  ()
 .setDescription(`
 >    <a:9851_Loading:802635592928067584>  Show Team 1.4 Güncellemesi
 
-> <a:onay:686199897367511040> [ **!moderasyon** ] → Moderasyon Komutları
-> <a:onay:686199897367511040> [ **!kullanıcı** ] → Kullanıcı Komutları
-> <a:onay:686199897367511040>  [ **!moderasyon2** ] → Yetkili Komutları 2
-> <a:onay:686199897367511040>  [ !**gif-menü** ] Gif Komutları
+> <a:carkl:682484412499099652> [ **!moderasyon** ] → Moderasyon Komutları
+> <a:devp:776699041933295627> [ **!moderasyon2** ] → Yetkili Komutları 2
+> <a:kullanici:686200700820389909>  [ **!kullanıcı** ] → Kullanıcı Komutları
+> <a:707688648966930444:789460996938792970>  [ !**gif-menü** ] Gif Komutları
 > <a:onay:686199897367511040> [ **!koruma-yardım**] → Moderasyon Komutları
-> <a:onay:686199897367511040> [ **!seviye-yardım**] → Seviye Komutları  
+> <a:gold:686208112252026981> [ **!seviye-yardım**] → Seviye Komutları  
 >     **<a:HaraketliEmoji198:802849819604680725> Bot Linkleri <a:HaraketliEmoji198:802849819604680725>**
-> <a:HaraketliEmoji198:802849819604680725> Botu Davet Et [Tıkla!](https://discord.com/oauth2/authorize?client_id=794184837355274270&scope=bot&permissions=8)
-> <a:HaraketliEmoji198:802849819604680725> Hatalar Var İse Destek Sunucusundan Bize Bildir Lütfen [Tıkla!](https://discord.gg/7KFJktCdYf)        
+> <a:party:797015217963532289> Botu Davet Et [Tıkla!](https://discord.com/oauth2/authorize?client_id=794184837355274270&scope=bot&permissions=8)
+> <a:gelistiricibebegim:756514167816716499> Hatalar Var İse Destek Sunucusundan Bize Bildir Lütfen [Tıkla!](https://discord.gg/7KFJktCdYf)        
  
  
  
