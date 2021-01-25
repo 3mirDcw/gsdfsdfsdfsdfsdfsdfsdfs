@@ -20,7 +20,7 @@ exports.run = function(client, message, args) {
     .setDescription(`**İşlem Başarılı ✅**\n\n${kişi} Adlı Kullanıcıya ${rol} Adlı Rolü Verdim!`)
     .setTimestamp()
  
-    if (!message.member.hasPermission('<@803001559415390239>')) return message.channel.send(yetkiyok)
+    if (!message.member.hasPermission('MANAGE_ROLES')) return message.channel.send(yetkiyok)
     if (!kişi) return message.channel.send(kime)
     if (!rol) return message.channel.send(hangirol)
  
