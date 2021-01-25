@@ -3,7 +3,7 @@ const Discord = require ("discord.js");
 exports.run = (client, message) => {
   if (!message.guild) {
     const ozelmesajuyari = new Discord.MessageEmbed()
-    .setColor(0xFF0000)
+    .setColor()
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
     .addField('**Botumuz Maalesef Özel Mesajlarda Kullanılamaz**', `UYARI`)
