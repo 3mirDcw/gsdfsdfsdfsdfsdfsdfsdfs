@@ -1859,7 +1859,7 @@ client.on("message", msg => {
 //7 24 sesli başlangıc 
 client.on("ready", () => {
   client.channels.cache.get("803203712234946610").join();
-})
+}) 
 //724 sesli son
 // eklendim
 client.on('guildCreate', async guild => { client.channels.get('802940043521032284').send(`${guild}, isimli sunucuya eklendim!`)})
