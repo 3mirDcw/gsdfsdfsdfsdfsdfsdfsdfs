@@ -29,7 +29,8 @@ exports.run = async(client, message, args) => {
   **» <a:kullanici:686200700820389909> ${prefix}Davet**  Botun Davet Linkini Görebilirsin.
   **» <a:kullanici:686200700820389909> ${prefix}sunucu-kur**  Sunucu Kurar (Kanalları Silmez)
   **» <a:kullanici:686200700820389909> ${prefix}yaz**  Yazsığınız Mesajı Bot Yazar.
-▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
+**» <a:kullanici:686200700820389909> ${prefix}banner**  Banner Yapar
+                  ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 
 **»  ${prefix}davet __Botu Davet Edebilirsiniz!__**
 **»  ${prefix}sunucutanıt __Sunucunuzu Tanıtabilirsiniz.__**

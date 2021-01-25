@@ -54,7 +54,7 @@ const embed = new Discord.MessageEmbed  ()
 > <a:onay:686199897367511040>  [ !**gif-menü** ] Gif Komutları
 >     **<a:HaraketliEmoji198:802849819604680725> Bot Linkleri <a:HaraketliEmoji198:802849819604680725>**
 > <a:HaraketliEmoji198:802849819604680725> Botu Davet Et [Tıkla!](https://discord.com/oauth2/authorize?client_id=794184837355274270&scope=bot&permissions=8)
- 
+        
  
  
  
