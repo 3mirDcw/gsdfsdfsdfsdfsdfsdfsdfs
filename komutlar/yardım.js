@@ -57,7 +57,7 @@ const embed = new Discord.MessageEmbed  ()
 > <a:gold:686208112252026981> [ **!seviye-yardım**] → Seviye Komutları  
 >     **<a:HaraketliEmoji198:802849819604680725> Bot Linkleri <a:HaraketliEmoji198:802849819604680725>**
 > <a:party:797015217963532289> Botu Davet Et [Tıkla!](https://discord.com/oauth2/authorize?client_id=794184837355274270&scope=bot&permissions=8)
-> <a:gelistiricibebegim:756514167816716499> Hatalar Var İse Destek Sunucusundan Bize Bildir Lütfen [Tıkla!](https://discord.gg/7KFJktCdYf)        
+> <a:ayi:764799982154547222> Hatalar Var İse Destek Sunucusundan Bize Bildir Lütfen [Tıkla!](https://discord.gg/7KFJktCdYf)        
  
  
  
