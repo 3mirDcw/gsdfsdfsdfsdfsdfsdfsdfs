@@ -15,12 +15,10 @@ exports.run = async(client, message, args) => {
   **» <a:tamir:797015213634748436> ${prefix}güvenlik ** Resimli Güvenlik Sistemini Belirlediğiniz Kanal Yapar..
   **» <a:tamir:797015213634748436> ${prefix}güvenlik sıfırla ** Resimli Güvenlik Sistemini Kapatırsınız.
   **» <a:tamir:797015213634748436> ${prefix}capslock-engelleme **  CapsLock Engelleme Sistemini Açıp Kapatırsınız (İlk Yazışta Açar 2.de kapar)
-  **» <a:tamir:797015213634748436> ${prefix}küfürengel**  Küfür Sistemini Açar/Kapatırsınız.
   **» <a:tamir:797015213634748436> ${prefix}reklamengel**  Reklam Engel Sistemini Açar/Kapatırsınız.
   **» <a:tamir:797015213634748436> ${prefix}temizle **  Belirlenen Miktarda Mesaj Siler.
   **» <a:tamir:797015213634748436> ${prefix}sunucupanel **  Sunucu Panel Açar.
-  **» <a:tamir:797015213634748436> ${prefix}unban ** İdsi Girelen Kullanıcıyı Banının Açar.
-  **» <a:tamir:797015213634748436> ${prefix}bakım ** Kanalı Bakıma Alır.
+  **» <a:tamir:797015213634748436> ${prefix}bakım ** Kanalı Bakıma Alır (Perm Şart).
 ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 
 **»  ${prefix}davet __Botu Davet Edebilirsiniz!__**
