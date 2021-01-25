@@ -16,9 +16,9 @@ exports.run = async(client, message, args) => {
   **» ${prefix}seviye-rol** <a:yildz:718028510584897546> İstenilen Seviyeye Gelince Verilecek Rolü Ayarlar.
   **» ${prefix}seviye-sıfırla ** <a:yildz:718028510584897546> Mevcut Seviye Sistemini Sıfırlar
   **» ${prefix}seviye-sınır ** <a:yildz:718028510584897546> Maksimum Kazanılanabilecek Seviyeyi Belirler.
-  **» ${prefix}seviye-xp ** <a:sagok:749305875188940983> Bir Mesaj Başına Verilecek Xp yi ayarlar.
-  **» ${prefix}seviye-top ** <a:sagok:749305875188940983> Sunucuda ki En yüksek 5 Kişiyi Gösterir
-  **» ${prefix}seviye-rütbeler ** <a:sagok:749305875188940983> Hangi Seviye de Rol Verilecek Onu Gösterir.
+  **» ${prefix}seviye-xp ** <a:yildz:718028510584897546> Bir Mesaj Başına Verilecek Xp yi ayarlar.
+  **» ${prefix}seviye-top ** <a:yildz:718028510584897546> Sunucuda ki En yüksek 5 Kişiyi Gösterir
+  **» ${prefix}seviye-rütbeler ** <a:yildz:718028510584897546> Hangi Seviye de Rol Verilecek Onu Gösterir.
 ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 
 **»  ${prefix}davet __Botu Davet Edebilirsiniz!__**
