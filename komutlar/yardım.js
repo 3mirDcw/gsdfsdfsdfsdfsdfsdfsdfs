@@ -45,6 +45,7 @@ return message.channel.send(EmbedCrewCode)
 const embed = new Discord.MessageEmbed  ()
 .setColor("Blue")
 .setTitle('Show Team Yardım ')
+.setImage('https://media.discordapp.net/attachments/803189389374652426/803191624435892244/standard.gif')
 .setDescription(`
 >    <a:9851_Loading:802635592928067584>  Show Team 1.4 Güncellemesi
 
