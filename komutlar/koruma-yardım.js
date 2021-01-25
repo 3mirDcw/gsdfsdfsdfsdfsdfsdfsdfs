@@ -10,7 +10,7 @@ exports.run = async(client, message, args) => {
     const embed = new Discord.MessageEmbed()
         .setAuthor(`${client.user.username} `, client.user.displayAvatarURL({dynamic: true}))
         .setColor('#d02090')
-       .setTitle(`<a:ykleniyor:752305324588793896> **Lydia Bot Koruma Menüsüne Hoşgeldiniz** <a:ykleniyor:752305324588793896>`)
+       .setTitle(`<a:load:797015222316564510> **ShowTeam Bot Koruma Menüsüne Hoşgeldiniz** <a:load:797015222316564510>`)
         .setDescription(`
 
   **» ${prefix}ban-koruma #kanal** <a:1226_discord_verified:802635579958493294> Sunucudan Birini Banlayan Kişiyi Sunucudan Atar Ve Banlananın Banını Açar
@@ -47,6 +47,6 @@ exports.conf = {
 
 exports.help = {
   name: 'koruma-yardım',
-  description: 'a!davet-sistemi Menüsü',
+  description: '!davet-sistemi Menüsü',
   usage: 'kayıt-sistemi'
 };
