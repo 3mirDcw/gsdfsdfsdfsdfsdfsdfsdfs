@@ -7,7 +7,7 @@ let botid = ('709489466913325168')
 exports.run = async(client, message, args) => {
  let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "!"; 
     const embed = new Discord.MessageEmbed()
-        .setAuthor(`${client.user.username} `, client.user.displayAvatarURL({dynamic: true}))
+        .setAuthor(`${client.user.username} `, client.user.displayAvatarURL()({dynamic: true}))
         .setColor('#d02090')
        .setTitle(` **ShowTeam Bot  Kullanıcı Menüsüne Hoşgeldiniz** `)
         .setDescription(`
@@ -29,6 +29,8 @@ exports.run = async(client, message, args) => {
   **» <a:kullanici:686200700820389909> ${prefix}Davet**  Botun Davet Linkini Görebilirsin.
   **» <a:kullanici:686200700820389909> ${prefix}sunucu-kur**  Sunucu Kurar (Kanalları Silmez)
   **» <a:kullanici:686200700820389909> ${prefix}yaz**  Yazsığınız Mesajı Bot Yazar.
+  **» <a:kullanici:686200700820389909> ${prefix}stresçarkı**  Sizin İçin 1 Stres Çarkı Çevirir.
+  **» <a:kullanici:686200700820389909> ${prefix}kralol**  Kral Olursunuz.
                   ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 
 **»  ${prefix}davet __Botu Davet Edebilirsiniz!__**
@@ -40,7 +42,7 @@ exports.run = async(client, message, args) => {
 `)
         .setThumbnail(`https://cdn.discordapp.com/attachments/735925634336817283/762342094554791936/ezgif.com-optimize_8-1.gif`)
                .addField(`» ShowTeam Bot Bağlantıları`, `  [Bot Davet Linki](https://discord.com/oauth2/authorize?client_id=794184837355274270&scope=bot&permissions=8) **|** [Destek Sunucusu](https://discord.gg/FQVadvq) **|** [Oy Linki](http://bit.ly/lydiaoy) **|** <a:alev:752289999642296370>`)
-        .setFooter(`${message.author.username} Tarafından İstendi.`, message.author.displayAvatarURL({dynamic: true}))
+        .setFooter(`${message.author.username} Tarafından İstendi.`, message.author.displayAvatarURL()({dynamic: true}))
     return message.channel.send(embed);
   
   
@@ -55,6 +57,6 @@ exports.conf = {
 
 exports.help = {
   name: 'kullanıcı',
-  description: 'a!davet-sistemi Menüsü',
+  description: '!davet-sistemi Menüsü',
   usage: 'kullanıcı'
 };

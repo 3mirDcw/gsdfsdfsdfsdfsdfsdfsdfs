@@ -24,7 +24,7 @@ exports.run = (bot, message, params) => {
    .setFooter('Sunucu bilgi', message.guild.iconURL())
    .setTimestamp()
    message.channel.send({embed});
-   message.react('✅')
+   message.react('<a:kabul:802835416075862019>')
  };
 
  exports.conf = {
