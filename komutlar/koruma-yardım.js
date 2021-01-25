@@ -13,8 +13,6 @@ exports.run = async(client, message, args) => {
        .setTitle(`<a:load:797015222316564510> **ShowTeam Bot Koruma Menüsüne Hoşgeldiniz** <a:load:797015222316564510>`)
         .setDescription(`
 
-  **» ${prefix}ban-koruma #kanal** <a:1226_discord_verified:802635579958493294> Sunucudan Birini Banlayan Kişiyi Sunucudan Atar Ve Banlananın Banını Açar
-  **» ${prefix}ban-koruma-sıfırla ** <a:1226_discord_verified:802635579958493294> Ayarlanan Ban Koruma Sistemini Sıfırlar.
   **» ${prefix}kanal-koruma #kanal** <a:1226_discord_verified:802635579958493294> Sunucuda Açılan veya Kapatılan Kanalı Otomatik Kapatır Veya Açar.
   **» ${prefix}kanal-koruma-sıfırla** <a:1226_discord_verified:802635579958493294> Ayarlanan Kanal Koruma Sistemini Sıfırlar.
   **» ${prefix}rol-koruma #kanal ** <a:1226_discord_verified:802635579958493294> Sunucuda Açılan veya Kapatılan Rolü Otomatık Kapatır Veya Açar.
@@ -30,8 +28,7 @@ exports.run = async(client, message, args) => {
 **»  ${prefix}prefix-sıfırla __Yazarak Ayarladığınız Prefixi Sıfırlayabilirsiniz.__**
 
 `)
-        .setThumbnail(`https://cdn.discordapp.com/attachments/735925634336817283/762342094554791936/ezgif.com-optimize_8-1.gif`)
-              .addField(`» Lydia Bot Bağlantıları`, ` <a:alev:752289999642296370> [Bot Davet Linki](https://discord.com/oauth2/authorize?client_id=696458462187618315&scope=bot&permissions=8) **|** [Destek Sunucusu](https://discord.gg/FQVadvq) **|** [Oy Linki](http://bit.ly/lydiaoy) **|** <a:alev:752289999642296370>`)
+
         .setFooter(`${message.author.username} Tarafından İstendi.`, message.author.displayAvatarURL({dynamic: true}))
     return message.channel.send(embed);
   
