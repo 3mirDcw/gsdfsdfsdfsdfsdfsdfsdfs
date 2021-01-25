@@ -1865,3 +1865,15 @@ client.on("ready", () => {
 client.on('guildCreate', async guild => { client.channels.get('802940043521032284').send(`${guild}, isimli sunucuya eklendim!`)})
 // atıldım
 client.on('guildRemove', async guild => { client.channels.get('802940043521032284').send(`${guild}, isimli sunucudan atıldım.. :(`)})
+//10 üye altı
+client.on("guildCreate", guild => {
+
+let pinkcode = "801090105292881922"
+
+if (guild.memberCount <  10) { //kişi sınırını ayarlayabilirsiniz
+
+guild.leave()
+
+return client.channels.cache.get(pinkcode).send("Eklendiğim sunuculardan birisi 10 üye altında olduğu için çıktım.")
+};
+});
