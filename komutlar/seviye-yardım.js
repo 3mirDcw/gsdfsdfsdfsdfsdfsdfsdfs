@@ -8,7 +8,7 @@ exports.run = async(client, message, args) => {
     const embed = new Discord.MessageEmbed()
         .setAuthor(`${client.user.username} `, client.user.displayAvatarURL({dynamic: true}))
         .setColor('#d02090')
-       .setTitle(`<a:ykleniyor:752305324588793896> **Lydia Bot Seviye Menüsüne Hoşgeldiniz** <a:ykleniyor:752305324588793896>`)
+       .setTitle(`<a:ykleniyor:752305324588793896> **ShowTeam Bot Seviye Menüsüne Hoşgeldiniz** <a:ykleniyor:752305324588793896>`)
         .setDescription(`
  
   **» ${prefix}seviye** <a:yildz:718028510584897546> Mevcut Olduğunuz Seviyeyi Gösterir.
@@ -28,8 +28,7 @@ exports.run = async(client, message, args) => {
 **»  ${prefix}prefix-sıfırla __Yazarak Ayarladığınız Prefixi Sıfırlayabilirsiniz.__**
 
 `)
-        .setThumbnail(`https://cdn.discordapp.com/attachments/735925634336817283/762342094554791936/ezgif.com-optimize_8-1.gif`)
-             .addField(`» Lydia Bot Bağlantıları`, ` <a:alev:752289999642296370> [Bot Davet Linki](https://discord.com/oauth2/authorize?client_id=696458462187618315&scope=bot&permissions=8) **|** [Destek Sunucusu](https://discord.gg/FQVadvq) **|** [Oy Linki](http://bit.ly/lydiaoy) **|** <a:alev:752289999642296370>`)
+ 
         .setFooter(`${message.author.username} Tarafından İstendi.`, message.author.displayAvatarURL({dynamic: true}))
     return message.channel.send(embed);
   
