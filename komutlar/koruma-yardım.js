@@ -13,14 +13,14 @@ exports.run = async(client, message, args) => {
        .setTitle(`<a:ykleniyor:752305324588793896> **Lydia Bot Koruma Menüsüne Hoşgeldiniz** <a:ykleniyor:752305324588793896>`)
         .setDescription(`
 
-  **» ${prefix}ban-koruma #kanal** <a:sagok:749305875188940983> Sunucudan Birini Banlayan Kişiyi Sunucudan Atar Ve Banlananın Banını Açar
-  **» ${prefix}ban-koruma-sıfırla ** <a:sagok:749305875188940983> Ayarlanan Ban Koruma Sistemini Sıfırlar.
-  **» ${prefix}kanal-koruma #kanal** <a:sagok:749305875188940983> Sunucuda Açılan veya Kapatılan Kanalı Otomatik Kapatır Veya Açar.
-  **» ${prefix}kanal-koruma-sıfırla** <a:sagok:749305875188940983> Ayarlanan Kanal Koruma Sistemini Sıfırlar.
-  **» ${prefix}rol-koruma #kanal ** <a:sagok:749305875188940983> Sunucuda Açılan veya Kapatılan Rolü Otomatık Kapatır Veya Açar.
-  **» ${prefix}rol-koruma-sıfırla ** <a:sagok:749305875188940983> Ayarlanan Rol Koruma Sistemini Sıfırlar.
-  **» ${prefix}spam ** <a:sagok:749305875188940983> Spam engel açar.
-  **» ${prefix}spamkapat ** <a:sagok:749305875188940983> Spam engel kapatır.
+  **» ${prefix}ban-koruma #kanal** <a:1226_discord_verified:802635579958493294> Sunucudan Birini Banlayan Kişiyi Sunucudan Atar Ve Banlananın Banını Açar
+  **» ${prefix}ban-koruma-sıfırla ** <a:1226_discord_verified:802635579958493294> Ayarlanan Ban Koruma Sistemini Sıfırlar.
+  **» ${prefix}kanal-koruma #kanal** <a:1226_discord_verified:802635579958493294> Sunucuda Açılan veya Kapatılan Kanalı Otomatik Kapatır Veya Açar.
+  **» ${prefix}kanal-koruma-sıfırla** <a:1226_discord_verified:802635579958493294> Ayarlanan Kanal Koruma Sistemini Sıfırlar.
+  **» ${prefix}rol-koruma #kanal ** <a:1226_discord_verified:802635579958493294> Sunucuda Açılan veya Kapatılan Rolü Otomatık Kapatır Veya Açar.
+  **» ${prefix}rol-koruma-sıfırla ** <a:1226_discord_verified:802635579958493294> Ayarlanan Rol Koruma Sistemini Sıfırlar.
+  **» ${prefix}spam ** <a:1226_discord_verified:802635579958493294> Spam engel açar.
+  **» ${prefix}spamkapat ** <a:1226_discord_verified:802635579958493294> Spam engel kapatır.
 ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
 
 **»  ${prefix}davet __Botu Davet Edebilirsiniz!__**
