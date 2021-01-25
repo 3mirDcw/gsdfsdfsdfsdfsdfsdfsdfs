@@ -40,12 +40,12 @@ exports.run = async(client, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['kayıt-sistemi'],
+  aliases: ['kayıt-yardım'],
   permLevel: 0,
 };
 
 exports.help = {
-  name: 'kayıt-sistemi',
-  description: 'a!davet-sistemi Menüsü',
+  name: 'kayıt-yardım',
+  description: '!davet-sistemi Menüsü',
   usage: 'kayıt-sistemi'
 };
