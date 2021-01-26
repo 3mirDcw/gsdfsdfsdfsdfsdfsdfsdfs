@@ -1705,7 +1705,7 @@ client.on("guildMemberAdd", member => {
 
    const saasembed = new Discord.MessageEmbed()
 ////.setTitle('Bir Gold Üye Belirdi! ')
-.setDescription('❤ Aleyküm Selam. Hoş Geldin! ❤')
+.setDescription('<a:752549401259409548:803581300971274240> Aleyküm Selam. Hoş Geldin! <a:762173994928701480:803581671432781866>')
 .setTimestamp()
 .setFooter('ShowTeam')
 .setColor(0x36393E)
@@ -1881,8 +1881,8 @@ return client.channels.cache.get(pinkcode).send("Eklendiğim sunuculardan birisi
 client.on("message", async msg => {
 if(msg.content.toLowerCase() === "sa") {
 
-await msg.react('🇦');
-await msg.react('🇸');
+await msg.react('<a:752549401259409548:803581300971274240>');
+await msg.react('<a:762173994928701480:803581671432781866>');
 
 }
 
