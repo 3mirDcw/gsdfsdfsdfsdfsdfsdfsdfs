@@ -57,6 +57,6 @@ exports.conf = {
 
 exports.help = {
   name: 'kullanıcı',
-  description: '!davet-sistemi Menüsü',
-  usage: 'kullanıcı'
+  description: '!kullanıcı Menüsü',
+  usage: 'kullanıcı-yardım'
 };

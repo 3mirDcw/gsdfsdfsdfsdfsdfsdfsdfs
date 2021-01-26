@@ -4,11 +4,11 @@ exports.run = async (client, message, args, level) => {
   try {
     let bk = ["Bulunamadı!"]
     const embed = new Discord.MessageEmbed()
-    .setTitle(`Greedy - Komut Sayısı `)
+    .setTitle(`ShowTeam - Komut Sayısı `)
     //.addField(`Bot Bakımdamı ?` , "hayır")
-    .setDescription('**\nToplam**  **' + client.commands.size + '** **Komut Vardır!** \nBotda Bakımda Olan Komut Sayısı :', `${bk}`)
-    .setColor("RANDOM")
-    .setImage('https://media.discordapp.net/attachments/803189389374652426/803191624435892244/standard.gif')
+    .setDescription('**\nToplam**  **' + client.commands.size + '** **Komut Vardır!** \nBotda Bakımda Olan Komut Sayısı :4', `${bk}`)
+    .setColor("GOLD")
+    .setImage('https://media.discordapp.net/attachments/803248872725807134/803252851597246464/standard_1.gif')
     .setTimestamp()
     .setFooter(message.author.username , message.author.avatarURL())
 

@@ -47,6 +47,6 @@ module.exports = client => {
             }
   console.log(`BOT: ${client.user.username} ismi ile giriş yapıldı!`);
   client.user.setStatus("idle");
-  client.user.setActivity(`🚀 !yardım Bot şu an ${client.guilds.size} sunucuya hizmet veriyor!;)`, { type: "LISTENING"});
+  client.user.setActivity(`🚀 !yardım Bot şu an 24 sunucuya ve 62.045 Kullanıcıya Hizmet Veriyor ;)`, { type: "LISTENING"});
   console.log(`BOT: Şu an ` + client.channels.size + ` adet kanala, ` + client.guilds.size + ` adet sunucuya ve ` + client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString() + ` kullanıcıya hizmet veriliyor!`);
 };
