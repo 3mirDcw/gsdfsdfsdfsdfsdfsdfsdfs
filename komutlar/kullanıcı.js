@@ -1,19 +1,19 @@
-const Discord = require ("discord.js");
+const discord = require ("discord.js");
 
 exports.run = (client, message) => {
-if (!message.guild) {
+/*if (!message.guild) {
     const ozelmesajuyari = new Discord.MessageEmbed()
     .setColor(0xFF0000)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL())
     .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
     return message.author.send(ozelmesajuyari); }
-  
-const NARCOSEMBED = new Discord.MessageEmbed()
+  */
+const he = new discord.MessageEmbed()
 
 .setColor("RANDOM")
 .setTitle("**  » Show Team Bot  **")
-.setThumbnail("https://cdn.discordapp.com/attachments/802939948709445656/803584395868504074/standard_1.gif")
+//.setThumbnail("https://cdn.discordapp.com/attachments/802939948709445656/803584395868504074/standard_1.gif")
 .setDescription(`
  **» <a:kullanici:686200700820389909> !avatar**  Avatarınızı Atar.
   **» <a:kullanici:686200700820389909> !sunucutanıt**  Sunucunuzu Tanıtır.
@@ -46,8 +46,7 @@ const NARCOSEMBED = new Discord.MessageEmbed()
 `)
  
 
-return message.channel.send(NARCOSEMBED)
-.then; 
+message.channel.send(he);
 
 };
 exports.conf = {
