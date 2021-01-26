@@ -4,7 +4,7 @@ exports.run = (client, message, params) => {
     if (!message.guild) return;
     if (message.channel.type !== 'dm') {
       const drdeli = new Discord.MessageEmbed()
-    .setAuthor(message.author.username + ' Artık Kral Oldun!!!')
+    .setAuthor(message.author.username + ' Sen Nasıl Bir Kralsın !!!')
     .setColor(`RANDOM`)
     .setTimestamp()
     .setDescription('')

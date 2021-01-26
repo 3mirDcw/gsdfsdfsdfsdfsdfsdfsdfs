@@ -1877,3 +1877,14 @@ guild.leave()
 return client.channels.cache.get(pinkcode).send("Eklendiğim sunuculardan birisi 10 üye altında olduğu için çıktım.")
 };
 });
+//emojili sa as 
+client.on("message", async msg => {
+if(msg.content.toLowerCase() === "sa") {
+
+await msg.react('🇦');
+await msg.react('🇸');
+
+}
+
+});
+//emojili sa as bitiş
