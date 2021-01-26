@@ -1,21 +1,24 @@
-const discord = require ("discord.js");
+const Discord = require ("discord.js");
 
 exports.run = (client, message) => {
-/*if (!message.guild) {
+  if (!message.guild) {
     const ozelmesajuyari = new Discord.MessageEmbed()
     .setColor(0xFF0000)
     .setTimestamp()
-    .setAuthor(message.author.username, message.author.avatarURL())
-    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Botumuz Maalesef Özel Mesajlarda Kullanılamaz**')
     return message.author.send(ozelmesajuyari); }
-  */
-const he = new discord.MessageEmbed()
+  
+const EmbedCrewCode = new Discord.MessageEmbed()
 
 .setColor("RANDOM")
-.setTitle("**  » Show Team Bot  **")
-//.setThumbnail("https://cdn.discordapp.com/attachments/802939948709445656/803584395868504074/standard_1.gif")
+.setTitle("**  » ShowTeam Kullanıcı Menüsü   **")
+.setThumbnail("https://cdn.discordapp.com/attachments/793186057260367895/793424496404332564/yakyor.png")
 .setDescription(`
- **» <a:kullanici:686200700820389909> !avatar**  Avatarınızı Atar.
+**» Bağlantılar** 
+**[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=794184837355274270&permissions=8&scope=bot)**
+
+  **» <a:kullanici:686200700820389909> !avatar**  Avatarınızı Atar.
   **» <a:kullanici:686200700820389909> !sunucutanıt**  Sunucunuzu Tanıtır.
   **» <a:kullanici:686200700820389909> !kullanıcı-bilgi**  Etiketlediğiniz Kişinin Kullanıcı Bilgisini Gösterir.
   **» <a:kullanici:686200700820389909> !kanalbilgi **  Belirtilen Kanal Hakkında Bilgi Verir.
@@ -35,29 +38,20 @@ const he = new discord.MessageEmbed()
   **» <a:kullanici:686200700820389909> !yaz**  Yazsığınız Mesajı Bot Yazar.
   **» <a:kullanici:686200700820389909> !stresçarkı**  Sizin İçin 1 Stres Çarkı Çevirir.
   **» <a:kullanici:686200700820389909> !kralol**  Kral Olursunuz.
-                  ▬▬▬▬▬▬▬▬ \`\`\Genel Komutlar\`\`\ ▬▬▬▬▬▬▬▬
-
-**»  !davet __Botu Davet Edebilirsiniz!__**
-**»  !sunucutanıt __Sunucunuzu Tanıtabilirsiniz.__**
-**»  !istatistik __Yazarak Botun İstatistiklerini Göre Bilirsiniz.__**
-**»  !prefix __Yazarak Botun Prefixini Değiştirebilirsiniz.__**
-**»  !prefix-sıfırla __Yazarak Ayarladığınız Prefixi Sıfırlayabilirsiniz.__**
-
 `)
  
 
-message.channel.send(he);
+return message.channel.send(EmbedCrewCode)
+.then; 
 
 };
 exports.conf = {
     enabled: true, 
     guildOnly: false, 
-    aliases: [], 
+    aliases: ["Kullanıcı","kullanici","Kullanici"], 
     permLevel: 0 
 };
-  
+
   exports.help = {
-    name: 'kullanıcı', 
-    description: 'Botun Komut Listesini Gösterir!',
-    usage: '-kullanıcı'
+    name: 'kullanıcı'
 };
