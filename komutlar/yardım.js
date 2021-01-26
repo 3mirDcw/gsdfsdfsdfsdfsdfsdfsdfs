@@ -53,7 +53,7 @@ const embed = new Discord.MessageEmbed  ()
  ――――――――――――――――――――――――――――
 > <a:devp:776699041933295627> [ **!moderasyon2** ] → Yetkili Komutları 2
  ――――――――――――――――――――――――――――
-> <a:kullanici:686200700820389909> [ **!kullanıcı** ]
+> <a:kullanici:686200700820389909> [ **!kullanıcı** ] Kullanıcı Komutları
  ―――――――――――――――――――――――――――― 
 > <a:707688648966930444:789460996938792970>  [ !**gif-menü** ] Gif Komutları
  ――――――――――――――――――――――――――――
@@ -63,7 +63,7 @@ const embed = new Discord.MessageEmbed  ()
  ――――――――――――――――――――――――――――
 >     **<a:HaraketliEmoji198:802849819604680725> Bot Linkleri <a:HaraketliEmoji198:802849819604680725>**
 ――――――――――――――――――――――――――――
-> <a:party:797015217963532289> Botu Davet Et [Tıkla!](https://discord.com/oauth2/authorize?client_id=794184837355274270&scope=bot&permissions=8)
+> <a:party:797015217963532289> Botu Davet Et [Tıkla!](bit.ly/showteamdavet)
  ――――――――――――――――――――――――――――
 > <a:ayi:764799982154547222> Hatalar Var İse Destek Sunucusundan Bize Bildir Lütfen [Tıkla!](https://discord.gg/RybaFGs2)        
  ――――――――――――――――――――――――――――
