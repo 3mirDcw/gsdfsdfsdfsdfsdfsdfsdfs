@@ -43,7 +43,7 @@ exports.run = async (client, msg, args) => {
   if(member.id === client.user.id){
     msg.channel.send({embed: {
  color: Math.floor(Math.random() * (0xFFFFFF + 1)),
- description:  Beni mi kandırcan orospu çocuğu ?`)
+ description: (`<a:red:802835418236059658> Beni mi kandırcan orospu çocuğu ?`)
 }})
   }
   else{
