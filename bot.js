@@ -965,7 +965,7 @@ client.channels.cache.get(kanal).send({embed: darkcode}).catch(err => console.lo
 client.on("message", msg => {
 	//let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "!";
 	const westrabumbe = new Discord.MessageEmbed()
-	.setColor("RANDOM")
+	.setColor("GOLD")
 	.setDescription(`Prefixim: ${prefix}\n Yardım için: ${prefix}yardım`)
   if (msg.content.includes(`<@${client.user.id}>`) || msg.content.includes(`<@!${client.user.id}>`)) {
     msg.channel.send(westrabumbe);
