@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
 const naber = new Discord.RichEmbed()
         .setColor('RANDOM')
         .setDescription(`Bot şu an ${client.guilds.size} sunucuya hizmet veriyor!`)
-        .setFooter(`DevTR`)
+        .setFooter(`ShowTeam`)
         message.channel.send(naber);
 };
 
