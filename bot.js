@@ -1861,13 +1861,13 @@ client.on("ready", () => {
 }) 
 //724 sesli son
 // eklendim
-client.on('guildCreate', async guild => { client.channels.get('802940043521032284').send(`${guild}, isimli sunucuya eklendim!`)})
+client.on('guildCreate', async guild => { client.channels.get('814878350505803798').send(`${guild}, isimli sunucuya eklendim!`)})
 // atıldım
-client.on('guildRemove', async guild => { client.channels.get('802940043521032284').send(`${guild}, isimli sunucudan atıldım.. :(`)})
+client.on('guildRemove', async guild => { client.channels.get('814878350505803798').send(`${guild}, isimli sunucudan atıldım.. :(`)})
 //10 üye altı
 client.on("guildCreate", guild => {
 
-let pinkcode = "801090105292881922"
+let pinkcode = "814878350505803798"
 
 if (guild.memberCount <  10) { //kişi sınırını ayarlayabilirsiniz
 
