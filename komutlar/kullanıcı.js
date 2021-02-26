@@ -38,6 +38,7 @@ const EmbedCrewCode = new Discord.MessageEmbed()
   **» <a:kullanici:686200700820389909> !yaz**  Yazsığınız Mesajı Bot Yazar.
   **» <a:kullanici:686200700820389909> !stresçarkı**  Sizin İçin 1 Stres Çarkı Çevirir.
   **» <a:kullanici:686200700820389909> !kralol**  Kral Olursunuz.
+  **» <a:kullanici:686200700820389909> !kod-çevir**  Yazdığınız Kodu V11 Den V12 Ye Çevirir.
 `)
  
 

@@ -1,1 +1,1 @@
-# ShowTeam Altyapii
+Tıkla(https://bit.ly/showteamdavet)
