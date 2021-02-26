@@ -122,7 +122,7 @@ client.on("error", e => {
   console.log(chalk.bgRed(e.replace(regToken, "that was redacted")));
 });
 
-client.login(ayarlar.token);
+client.login(process.env.token);
 ///==========komutlar==========\\\
 client.on("guildMemberAdd", async(member) => {
   let sunucupaneli = await db.fetch(`sunucupanel_${member.guild.id}`)
